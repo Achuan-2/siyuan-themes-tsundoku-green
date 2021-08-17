@@ -15,10 +15,15 @@
     /* 高亮 */
     /* --b3-theme-primary: #4285f4; */
     /* 菜单高亮、样式高亮、错误提示，确定删除 */
-    --b3-theme-primary: #3ca3ce;
-    --b3-theme-primary-light: #b9d7e4;
-    --b3-theme-primary-lighter: #00b3ff;
-    --b3-theme-primary-lightest: rgba(66, 133, 244, 0.12);
+    /* 动态加载调圆点、设置按钮圆点、打开图片的关闭按钮 */
+    --b3-theme-primary: #6bb481;
+    /* 设置按钮长条 */
+    --b3-theme-primary-light: #6ab4806e;
+    /* 动态加载调长条 */
+    --b3-theme-primary-lighter: #85ab95;
+    /* 编辑器点击大纲高亮 */
+    --b3-theme-primary-lightest: rgba(31, 138, 93, 0.12);
+
     /* 订阅黄 */
     --b3-theme-secondary: #faad14;
     --b3-theme-background: #d5ead8;
@@ -59,7 +64,7 @@
     /* 菜单 */
     --b3-menu-background: #d5ead8;
     /* 提示 */
-    --b3-tooltips-color: #353d3f79;
+    --b3-tooltips-color: #353f3bad;
 
    /* 卡片背景 */
     --b3-card-error-color: rgb(97, 26, 21);
@@ -227,7 +232,7 @@
 .protyle-wysiwyg [data-node-id].h1 ,.b3-typography h1{
     text-align: center;
     border-bottom: 0px solid #c5c7ca !important;
-    font-size: 1.75em;
+    font-size: 1.75em !important;
     padding: 0.3em 4px;
     color: #04393f;
 }
@@ -235,32 +240,29 @@
     border-bottom: 1px solid #dfe0e1 !important;
     font-size: 1.55em !important;
     color: #34495e;
-    padding: 0.3em 0px !important;
-    /* margin-bottom: 0.75em; */
 }
 .protyle-wysiwyg [data-node-id].h3,.b3-typography h3 {
-    position: relative;
-    font-size: 1.35em;
+    font-size: 1.35em !important;
     color: rgb(21, 170, 191);
-    line-height: 1.25em;
-    border-left: 4px solid rgb(21, 170, 191);
-    text-align: justify;
-    padding: 5px 0px 0px 7px;
-    margin-top: 20px;
-    margin-bottom: 17px;
-    padding-left: 7px;
 }
-
+.protyle-wysiwyg [data-node-id].h3:before {
+    content:"| ";
+    display: inline;
+    font-size: 1.35em !important;
+}
+.protyle-wysiwyg [data-node-id].h3 div[contenteditable="true"] {
+    display: inline-block;
+}
 .protyle-wysiwyg [data-node-id].h4,.b3-typography h4 {
-    font-size: 1.2em;
+    font-size: 1.2em !important;
     color: #03a1b9cc;
 }
 .protyle-wysiwyg [data-node-id].h5,.b3-typography h5 {
-    font-size: 1.1em;
-    /* color: #03a1b9cc; */
+    font-size: 1.1em!important;
+    color: #58c6d6;
 }
 .protyle-wysiwyg [data-node-id].h6,.b3-typography h6 {
-    font-size: 1.1em;
+    font-size: 1.1em!important;
     /* color: #03a1b9cc; */
 }
 /* 标题加粗不显示 */
@@ -1064,7 +1066,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 }
 /* 调整设置的select按钮 */
 .b3-tab-container .b3-select {
-    background-color: #8fbfae71;
+    background-color: #548a7744;
 }
 .b3-tab-container .b3-select option {
     background-color: #def8e6;
@@ -1247,11 +1249,11 @@ div[data-subtype='t'][data-type='NodeList'] {
 }
 /* 选中块 */
 .protyle-wysiwyg--select, .protyle-wysiwyg--select .hljs {
-    background-color: #5ea77d44 !important;
+    background-color: rgba(31, 138, 93, 0.12) !important;
 }
 /* 鼠标划选区域*/
 .protyle-select{
-    background-color:  #5ea77d44;
+    background-color: rgba(31, 138, 93, 0.12);
 }
 /* 图片大小调整手柄 */
 /* 目前会飘 */
