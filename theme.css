@@ -559,8 +559,10 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
 }
 /* 行内代码 */
 .b3-typography code:not(.hljs), .protyle-wysiwyg code:not(.hljs) {
-
+    display: inline-flex;
+    transform: translateY(-1.5px);
     background-color: #c1d4c288;
+    margin:0px 2px;
 }
 /* 超链接 */
 .protyle-wysiwyg [data-node-id] span[data-type='a'] {
