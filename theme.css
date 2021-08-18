@@ -561,6 +561,7 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
 .b3-typography code:not(.hljs), .protyle-wysiwyg code:not(.hljs) {
     display: inline-flex;
     transform: translateY(-1.5px);
+    padding: 0em 0.4em;
     background-color: #c1d4c288;
     margin:0px 2px;
 }
@@ -1323,7 +1324,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 .b3-typography kbd, .protyle-wysiwyg kbd {
     display: inline-flex;
     padding: 2px 4px;
-    margin: 0px 1px;
+    margin: 0px 2px;
     background-color: #d1e0d2c9;
     box-shadow: 0 0 1px #415f86;
     transform: translateY(-1.5px);
