@@ -1147,11 +1147,11 @@ div[data-subtype='t'][data-type='NodeList'] {
     border-left: 2px solid #b7b8b97c;
     border-radius: 7px 7px 0px 0px;
     margin-right: 2px;
-    background-color: #d5ead8;
+    background-color: var(--b3-tab-custom-background);
     /* transition: all 0.1s ease; */
 }
 .layout-tab-bar .item:hover:not(.item--focus) {
-    background-color: transparent;
+    background-color: var(--b3-tab-custom-background);
     /* color:#00ddff; */
     font-weight: 600;
 }
@@ -1160,7 +1160,7 @@ div[data-subtype='t'][data-type='NodeList'] {
     color: var(--b3-menu-highlight-focus-color);
     font-weight: 400;
     font-size: 15px;
-    background-color: var(--b3-tab-custom-background);
+    background-color: transparent;
     border-right: 1px solid #b7b8b9;
     border-left: 1px solid #b7b8b9;
     border-bottom: 2px solid transparent;
@@ -1202,7 +1202,7 @@ div[data-subtype='t'][data-type='NodeList'] {
     border-radius: 10px;
     color: var(--b3-theme-on-surface);
     transition: var(--b3-transition);
-    background-color: #d5ead8;
+    background-color: transparent;
 }
 
 /* 面包屑 */
@@ -1336,13 +1336,19 @@ div[data-subtype='t'][data-type='NodeList'] {
     border-radius: 3px;
 }
 /* 文件树文档图标悬浮放大 */
-.b3-list--files .b3-list-item__icon:hover {
+.b3-list--files .b3-list-item__icon:hover{
     transform: scale(1.2);
+}
+.dock--vertical .dock__item:hover svg,
+.toolbar__item:hover svg,
+.block__icon:hover svg{
+    transform: scale(1.1);
 }
 /* 文档树文字放大 */
 .b3-list--files .b3-list-item__text:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
+
 /* ------------------ 自定义属性 ----------------------- */
 .protyle-wysiwyg [data-node-id][custom-function="挖空"]{
     border: 2px dashed  rgba(92, 135, 138, 0.322);
