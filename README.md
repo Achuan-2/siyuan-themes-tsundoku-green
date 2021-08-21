@@ -41,7 +41,7 @@ Tsundoku “積 ん 読”是日语里的一个词，维基百科是这样解释
 
 1. 本主题暂时将高亮<kbd>Ctrl+E</kbd>,设置为挖空效果：悬浮时才显示高亮的文字，默认隐藏文字
 
-   * 如果需要取消该效果，请在主题 css 中搜索「挖空」关键词，将所提示的代码删除![image](https://user-images.githubusercontent.com/60436214/129722555-7efb578e-e910-4c6a-9658-312efb7d78a7.png)
+   * 如果需要取消该效果，请在主题 css 中搜索「挖空」关键词，将所提示的代码删除![挖空效果代码](https://b3logfile.com/siyuan/1610205759005/assets/image-20210811113010-dpmose7.png)
 2. 添加了自定义块属性样式
 
    * 属性 key 都为 function
@@ -57,7 +57,7 @@ Tsundoku “積 ん 読”是日语里的一个词，维基百科是这样解释
      * 蓝——蓝色背景色
      * 红——红色背景色
    * 使用方式：单击块标选择打开属性列表或<kbd>Shift+Click</kbd>打开，点击<kbd>添加</kbd>，输入属性名为function，并输入相应的属性值（如“挖空”）
-   * 预览图：![Pl图片注释](https://b3logfile.com/siyuan/1610205759005/assets/image-20210811113600-e59xodn.png)
+   * 预览图：![image](https://user-images.githubusercontent.com/60436214/129722555-7efb578e-e910-4c6a-9658-312efb7d78a7.png)
 3. 对文字样式进行了自定义
 
    | 状态     | 配色情况                                                                                        |
