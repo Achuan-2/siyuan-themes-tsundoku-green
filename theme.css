@@ -1246,7 +1246,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 
 /* 光标选中文本样式 */
 .protyle-wysiwyg ::selection{ 
-    background-color:rgba(131, 186, 196, 0.245);
+    background-color:rgba(70, 126, 211, 0.245);
 }
 /* 选中块 */
 .protyle-wysiwyg--select, .protyle-wysiwyg--select .hljs {
