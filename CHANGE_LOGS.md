@@ -1,3 +1,9 @@
+## v0.0.7 / 2021-8-25
+
+* :lipstick: Optimize the style of closed notebooks
+* :lipstick: Optimize blockquote style
+* :bug: Fix 挖空 style can't not hide inline elements
+
 ## v0.0.6/2021-08-22
 
 * :lipstick: 光标选中文本样式
