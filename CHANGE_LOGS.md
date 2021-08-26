@@ -1,3 +1,8 @@
+## v0.0.8 / 2021-8-26
+
+* :lipstick: Optimize custom-emoji display
+* :lipstick: Cancel img shadow
+
 ## v0.0.7 / 2021-8-25
 
 * :lipstick: Optimize the style of closed notebooks
