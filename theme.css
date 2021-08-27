@@ -28,7 +28,7 @@
     --b3-theme-secondary: #faad14;
     --b3-theme-background: #d5ead8;
     /* 面包屑和标签页 */
-    --b3-theme-surface: #cce6d0;
+    --b3-theme-surface: #d5ead8;
     --b3-theme-error: #ec8d8e;
 
     /* 文字颜色 */
@@ -245,9 +245,10 @@
     font-size: 1.35em !important;
     color: rgb(21, 170, 191);
 }
-.protyle-wysiwyg [data-node-id].h3:before {
+.protyle-wysiwyg [data-node-id].h3:before,
+.b3-typography h3:before {
     content:"| ";
-    display: inline;
+    display: inline !important;
     font-size: 1.35em !important;
 }
 .protyle-wysiwyg [data-node-id].h3>div:first-child {
@@ -1221,7 +1222,11 @@ div[data-subtype='t'][data-type='NodeList'] {
 
     z-index: 2;
 }
-
+.protyle-preview__action {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--b3-theme-surface);
+}
 /* .b3-dialog__container .b3-dialog__close {
     color: #505964;
     font-size: 50%;
