@@ -1,3 +1,9 @@
+
+## v0.1.0 / 2021-8-28
+
+* :bug: Fix h3 mouse click problem
+* :bug: Fix table location in preview mode
+
 ## v0.0.9 / 2021-8-27
 
 * :bug: Fix h3 display in Embeded Block
