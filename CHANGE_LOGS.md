@@ -1,3 +1,7 @@
+## v0.1.1 / 2021-8-30
+
+* :lipstick: 调整自定义emoji大小，适配 win10emoji大小
+* ：lipstick: 隐藏twemoji中一些啰嗦的emoji，适配win10 emoji
 
 ## v0.1.0 / 2021-8-28
 
