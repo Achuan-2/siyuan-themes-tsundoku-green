@@ -1685,7 +1685,10 @@ display: flex;
 .emojis__item[data-unicode ="1f491"],
 .emojis__item[data-unicode ="1f48f"],
 .emojis__item[data-unicode ="1f6b6"],
-.emojis__item[data-unicode ="1f9cd"]{
+.emojis__item[data-unicode ="1f9cd"],
+.emojis__item[data-unicode ="2764-fe0f-200d-1fa79"],
+.emojis__item[data-unicode ="2764-fe0f-200d-1f525"]{
     display: none;
 }
+
 /* ----------optimize-custom-emoji ---END---------*/
