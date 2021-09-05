@@ -1,23 +1,28 @@
-## v0.1.1 / 2021-8-30
+## v0.1.2 / 2021-09-05
+
+* :lipstick: Change the label style: wrap both sides with # marks
+* :lipstick: Make the bold style of the blockquote obvious
+
+## v0.1.1 / 2021-08-30
 
 * :lipstick: 调整自定义emoji大小，适配 win10emoji大小
 * 💄 隐藏 twemoji 中一些啰嗦的 emoji，适配 win10 emoji
 
-## v0.1.0 / 2021-8-28
+## v0.1.0 / 2021-08-28
 
 * :bug: Fix h3 mouse click problem
 * :bug: Fix table location in preview mode
 
-## v0.0.9 / 2021-8-27
+## v0.0.9 / 2021-08-27
 
 * :bug: Fix h3 display in Embeded Block
 
-## v0.0.8 / 2021-8-26
+## v0.0.8 / 2021-08-26
 
 * :lipstick: Optimize custom-emoji display
 * :lipstick: Cancel img shadow
 
-## v0.0.7 / 2021-8-25
+## v0.0.7 / 2021-08-25
 
 * :lipstick: Optimize the style of closed notebooks
 * :lipstick: Optimize blockquote style
