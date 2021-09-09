@@ -66,7 +66,7 @@ Tsundoku “積 ん 読”是日语里的一个词，维基百科是这样解释
 
    | 状态     | 配色情况                                                                                        |
    | -------- | ----------------------------------------------------------------------------------------------- |
-   | 修改前   | ![Pl图片注释](https://b3logfile.com/siyuan/1610205759005/assets/image-20210801154103-b72ek74.png) |
+   | 修改前   | ![image](https://user-images.githubusercontent.com/60436214/132626989-f6d3efb5-2c99-4164-aea7-9a7286252db9.png) |
    | 修改后： | ![image](https://user-images.githubusercontent.com/60436214/129722513-7c48efbb-f107-423b-afdf-331a69512b2e.png)|
 
 ## **☎️意见交流**
