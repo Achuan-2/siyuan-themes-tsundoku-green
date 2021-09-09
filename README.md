@@ -39,7 +39,7 @@ Tsundoku “積 ん 読”是日语里的一个词，维基百科是这样解释
 * **动效丰富**：块引用鼠标悬浮预览页面展开动效、悬浮在按钮图标上有放大效果等待，提升用户在写作和阅读时的体验。
 * **任务列表样式优化**：对任务列表效果做了很多的优化，当把任务列表勾选时，普通文字变色加删除线，并针对完成的任务列表中的各个行内和块样式都做了一定处理。完成的任务列表中的图片和代码块透明度降低![image](https://user-images.githubusercontent.com/60436214/132628239-dbf008ce-2e97-4d31-8d3e-2b72bede4e2a.png)
 * **win端和安卓端emoji样式统一**：修改**安卓端的默认 emoji** 为 Win 10 emoji——Segoe UI Emoji，保证emoji样式统一
-* **代码块样式调整**![image](https://user-images.githubusercontent.com/60436214/132628254-d3bfa033-b826-48ff-8377-cb5b79d509e3.png)
+* **代码块样式调整**![image](https://user-images.githubusercontent.com/60436214/132628315-cd762fb5-6f35-4362-9b3e-eacfa71b168a.png)
 
 ## 💥本主题重要的修改
 
