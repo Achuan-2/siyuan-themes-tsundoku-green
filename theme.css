@@ -187,7 +187,8 @@
 }
 /* 背景纸张纹理 */
 .protyle,
-.protyle-preview{
+.protyle-preview,
+.layout-tab-container{
     background-image: url('src/paper.png');
 }
 
@@ -213,7 +214,7 @@
     background-color: #b3d4b7a9;
 }
 .layout-tab-container {
-    background-color: #c3ddc78a;
+    background-color: #c3ddc7af;
 }
 .block__icons {
     /* box-shadow: rgb(0 0 0 / 30%) 0px 1px 2px; */
@@ -1190,6 +1191,8 @@ div[data-subtype='t'][data-type='NodeList'] {
     border-left: 1px solid #b7b8b9;
     border-bottom: 0px solid transparent;
     /* filter: drop-shadow(2px 2px 3px #999); */
+    background-image: url('src/paper.png');
+
 }
 /* 多窗口foucs的标签页 */
 .layout__wnd--active .layout-tab-bar .item--focus {
@@ -1201,7 +1204,8 @@ div[data-subtype='t'][data-type='NodeList'] {
     /* 更改多窗口标签页当前页面底框高亮颜色 */
     border-bottom: 0px solid transparent;
     /* border-bottom: 2px solid #34495e7c; */
-    /* background-color: #00aaff; */
+    background-image: url('src/paper.png');
+
 }
 .layout-tab-bar .item:first-child {
     border-radius: 0px 7px 0px 0px;
