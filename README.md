@@ -23,7 +23,7 @@
 > 
 > 🌞 亮色主题见[Tsundoku Light](https://github.com/Achuan-2/siyuan-themes-tsundoku-light) | 🌛 深色主题见[Tsundoku Dark ](https://github.com/Achuan-2/siyuan-themes-tsundoku) | 🥗 护眼主题见[Tsundoku Green](https://github.com/Achuan-2/siyuan-themes-tsundoku-green)
 > 
-> 另外，本人的思源订阅推荐码：**B3XX0Y8**，欢迎各位老板使用！在买会员时使用订阅推荐码可增加 500 MB 云端空间和 7 天使用期！
+
 
 ## 💌 **缘起**
 
@@ -34,12 +34,13 @@ Tsundoku “積 ん 読”是日语里的一个词，维基百科是这样解释
 我借此名来警醒自己，希望思源能帮助我成长，帮我更好的完成任务，而不是又成为一个缓解知识焦虑的积灰箱，满足我的数字化囤积症。
 
 
-
-## ✨特色
-
-* **动效丰富**：块引用鼠标悬浮预览页面展开动效、悬浮在按钮图标上有放大效果，在不喧宾夺主原则下，提升用户在写作和阅读时的体验。
-* **任务列表样式优化**：对任务列表效果做了最多的优化，当把任务列表勾选时，普通文字变色加删除线，并针对完成的任务列表中的各个行内和块样式都做了一定处理
+## ✨主要特色
+                                                                                                                             
+* **标题样式优化**: ![image](https://user-images.githubusercontent.com/60436214/132635465-a60f19ab-e835-4cde-a9a0-4942e2ad24e8.png)
+* **动效丰富**：块引用鼠标悬浮预览页面展开动效、悬浮在按钮图标上有放大效果等待，提升用户在写作和阅读时的体验。
+* **任务列表样式优化**：对任务列表效果做了很多的优化，当把任务列表勾选时，普通文字变色加删除线，并针对完成的任务列表中的各个行内和块样式都做了一定处理。完成的任务列表中的图片和代码块透明度降低![image](https://user-images.githubusercontent.com/60436214/132628239-dbf008ce-2e97-4d31-8d3e-2b72bede4e2a.png)
 * **win端和安卓端emoji样式统一**：修改**安卓端的默认 emoji** 为 Win 10 emoji——Segoe UI Emoji，保证emoji样式统一
+* **代码块样式调整**![image](https://user-images.githubusercontent.com/60436214/132628315-cd762fb5-6f35-4362-9b3e-eacfa71b168a.png)
 
 ## 💥本主题重要的修改
 
@@ -66,7 +67,7 @@ Tsundoku “積 ん 読”是日语里的一个词，维基百科是这样解释
 
    | 状态     | 配色情况                                                                                        |
    | -------- | ----------------------------------------------------------------------------------------------- |
-   | 修改前   | ![Pl图片注释](https://b3logfile.com/siyuan/1610205759005/assets/image-20210801154103-b72ek74.png) |
+   | 修改前   | ![image](https://user-images.githubusercontent.com/60436214/132626989-f6d3efb5-2c99-4164-aea7-9a7286252db9.png) |
    | 修改后： | ![image](https://user-images.githubusercontent.com/60436214/129722513-7c48efbb-f107-423b-afdf-331a69512b2e.png)|
 
 ## **☎️意见交流**
