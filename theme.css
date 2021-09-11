@@ -693,7 +693,7 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
     text-align: center;
     border: 0px;
     border-radius: 0.17em;
-    background-color: #96b1ae;
+    background-color: #96b1ae79;
     top: 0.35em;
     font-size: 1em;
 }
@@ -708,7 +708,7 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
     font-size: 1em;
     line-height: 1.2em;
     color: #f8f9fa;
-    background-color: #73b197c0;
+    background-color: #73b1978f;
 }
 /* 复选框鼠标悬停 */
 .protyle-wysiwyg [data-node-id].li > .protyle-action--task:hover:before {
