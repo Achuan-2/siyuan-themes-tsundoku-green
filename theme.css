@@ -179,12 +179,18 @@
     --b3-menu-highlight-focus-color: #34495e;
     /* 文件树背景高亮颜色 */
     --b3-menu-highlight-background: #a4d1a9ad;
-    --b3-tab-custom-background: #c4ddc8;
+    --b3-tab-custom-background: #c4ddc89c;
 }
 
 .render-node[data-subtype='graphviz'] .graph > polygon {
     fill: transparent;
 }
+/* 背景纸张纹理 */
+.protyle,
+.protyle-preview{
+    background-image: url('src/paper.png');
+}
+
 /* ---------------编辑器内容两侧宽度设置 Start ————————————————————————*/
 /* 已放弃调整即时编辑内容两侧宽度，只调整预览模式 */
 /* 目前这种方式的弊端就是滑块位置往右了 */
@@ -240,7 +246,7 @@
 }
 .protyle-wysiwyg [data-node-id].h3,.b3-typography h3 {
     font-size: 1.35em !important;
-    color: rgb(21, 170, 191);
+    color: #1a8080;
     display: flex;
     align-items: center;
 }
@@ -261,11 +267,11 @@
 }
 .protyle-wysiwyg [data-node-id].h4,.b3-typography h4 {
     font-size: 1.2em !important;
-    color: #03a1b9cc;
+    color: #197e74c9;
 }
 .protyle-wysiwyg [data-node-id].h5,.b3-typography h5 {
     font-size: 1.1em!important;
-    color: #58c6d6;
+    color: #3ca89ec9;
 }
 .protyle-wysiwyg [data-node-id].h6,.b3-typography h6 {
     font-size: 1.1em!important;
@@ -1155,7 +1161,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 .layout__wnd--active .protyle-content,
 .layout__wnd--active .protyle-title .protyle-title__input{
     /* 当前编辑窗口保持主背景色 */
-    background-color: var(--b3-theme-background);
+    background-color: transparent;
 }
 .layout-tab-bar .item {
     padding: 4px 4px 4px 14px;
@@ -1228,15 +1234,22 @@ div[data-subtype='t'][data-type='NodeList'] {
 
 /* 面包屑 */
 .protyle-breadcrumb {
-    /* background-color: var(--b3-tab-custom-background); */
     background-color: transparent;
-
-    z-index: 2;
+    z-index: 1;
 }
 .protyle-preview__action {
     text-align: center;
     padding: 10px;
-    background-color: var(--b3-theme-surface);
+    background-color: transparent;
+}
+.protyle-preview__action button {
+    background-color: transparent;
+
+}
+.protyle-preview__action button.protyle-preview__action--current, 
+.protyle-preview__action button:hover {
+    background-color: transparent;
+
 }
 /* .b3-dialog__container .b3-dialog__close {
     color: #505964;
