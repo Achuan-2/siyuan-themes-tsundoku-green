@@ -167,7 +167,7 @@
     --b3-protyle-inline-tag-color: #f8f9fa;
     --b3-protyle-inline-code-color: #038296;
     --b3-protyle-inline-code-background: #e0ecf3a6;
-    --b3-protyle-inline-blockref-color: #f58484;
+    --b3-protyle-inline-blockref-color: #dc4949;
     --b3-protyle-inline-blockref-hover-color: #ff398b;
     /* 表格 */
     --b3-table-border-color: #29523d3b;
@@ -209,6 +209,7 @@
 .protyle-wysiwyg .code-block,
 div[style*="background-color: var" ],
 strong[style*="background-color: var" ],
+.protyle-toolbar,
 mark,
 .emojis,
 .b3-menu,
@@ -284,23 +285,35 @@ mark,
 .protyle-wysiwyg [data-node-id].h3,.b3-typography h3 {
     font-size: 1.35em !important;
     color: #1a8080;
-    display: flex;
-    align-items: center;
 }
 
 .protyle-wysiwyg [data-node-id].h3:before,
 .b3-typography h3:before {
     content:"|";
-    display: inline-block;
+    display: block;
+    float: left;
+    height: 1.105em;
     font-size: 1.35em !important;
+    margin-right: 8px;
+}
+
+.protyle-wysiwyg [data-node-id].h3>div:first-child{
+    /* block 不能改为inline,不然点击旁边不会激活光标！ */
+    display: block !important;
+    margin-top: 0.27em;
     margin-right: 8px;
 }
 .b3-typography h3:before {
     margin-right: 8px;
+    margin-top: -0.23em;
 }
-.protyle-wysiwyg [data-node-id].h3>div:first-child{
-        /* inline-block 不能改为inline,不然点击旁边不会激活光标！ */
-    display: inline-block !important;
+.b3-typography h3 {
+    padding-top: 0.27em;
+}
+
+.protyle-wysiwyg .h3[data-node-id][fold="1"]>div:first-child {
+    margin-top: 0em;
+
 }
 .protyle-wysiwyg [data-node-id].h4,.b3-typography h4 {
     font-size: 1.2em !important;
@@ -1391,7 +1404,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 
 /* 工具栏样式 */
 .protyle-toolbar {
-    background-color: rgb(218, 226, 215)
+    background-color: #c2ddc5;
 }
 
 
