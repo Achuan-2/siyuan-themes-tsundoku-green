@@ -1233,6 +1233,7 @@ div[data-subtype='t'][data-type='NodeList'] {
     border-left: 1px solid #b7b8b9;
     border-bottom: 0px solid transparent;
     /* filter: drop-shadow(2px 2px 3px #999); */
+    background-color: var(--b3-theme-surface);
     background-image: url('src/paper.png');
 
 }
@@ -1246,6 +1247,7 @@ div[data-subtype='t'][data-type='NodeList'] {
     /* 更改多窗口标签页当前页面底框高亮颜色 */
     border-bottom: 0px solid transparent;
     /* border-bottom: 2px solid #34495e7c; */
+    background-color: var(--b3-theme-surface);
     background-image: url('src/paper.png');
 
 }
