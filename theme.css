@@ -264,9 +264,9 @@ mark,
 }
 
 /*分窗口的边框（线）  */
-/* .layout__resize::after {
-    background-color: #c7d1d8;
-} */
+.layout__resize::after {
+    background-color: #bad3be;
+}
 
 /* -------------------------------标题样式-------------------------------------- */
 .protyle-wysiwyg [data-node-id].h1 ,.b3-typography h1{
