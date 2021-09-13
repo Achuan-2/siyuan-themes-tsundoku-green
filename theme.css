@@ -315,6 +315,10 @@ mark,
 .protyle-wysiwyg .h3[data-node-id][fold="1"]>div:first-child {
     margin-top: 0em;
 }
+/* 调整h3的空行提示 */
+.protyle-wysiwyg .h3>[spellcheck="false"]:focus:empty {
+    padding-left: 1rem;
+}
 .protyle-wysiwyg [data-node-id].h4,.b3-typography h4 {
     font-size: 1.2em !important;
     color: #197e74c9;
@@ -1427,7 +1431,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 .protyle-wysiwyg [data-node-id]:not(.code-block)>[spellcheck="false"]:focus:empty:after {
     /* 避免代码块也出现空行提示  */
     content: "To the time to life";  
-    color: #9fa5a6;
+    color: #529684d7;
 }
 
 /* 块添加圆角 */
@@ -1785,3 +1789,8 @@ display: flex;
 }
 
 /* ----------optimize-custom-emoji ---END---------*/
+
+/* 块标提示不被窗口线遮挡 */
+.protyle-gutters {
+    z-index: 3;
+}
