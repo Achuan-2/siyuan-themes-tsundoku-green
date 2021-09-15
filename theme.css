@@ -90,11 +90,6 @@
     --b3-font-color11: #099083;
     --b3-font-color12: #f5822e;
     --b3-font-color13: var(--b3-theme-background);
-    /* --b3-font-background1: #fddcdd; 
-    --b3-font-background2: #ffd58671;
-    --b3-font-background3: #64c2f541;
-    --b3-font-background4: #b8f5ce8a; */
-    /* 思考下要不要前四个背景色和卡片样式一致 */
     --b3-font-background1: var(--b3-card-error-background);
     --b3-font-background2: var(--b3-card-warning-background);
     --b3-font-background3: var(--b3-card-info-background);
@@ -108,7 +103,16 @@
     --b3-font-background11: #49efc54f;
     --b3-font-background12: #f5905663;
     --b3-font-background13: var(--b3-theme-on-background);
-
+    /* PDF */
+    --b3-pdf-sidebar-width: 200px;
+    --b3-pdf-offset: 0;
+    --b3-pdf-background1: var(--b3-font-color1);
+    --b3-pdf-background2: #fff195ec;
+    --b3-pdf-background3: #5be9ffb9;
+    --b3-pdf-background4: #9af997;
+    --b3-pdf-background5:  #d4d4d4;
+    --b3-pdf-background6: #52d4ca;
+    --b3-pdf-background7:  #faad14;
     /* 动画效果 */
     --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
 
@@ -146,7 +150,7 @@
     --b3-graph-asset-line: #037457;
     --b3-graph-hl-point: #f3a92f;
     --b3-graph-hl-line: #4285f4;
-
+    
     /* 编辑器搜索颜色 */
     --b3-protyle-search-background: #ffe955;
     --b3-protyle-search-border-color: #f2e680;
@@ -180,6 +184,7 @@
     /* 文件树背景高亮颜色 */
     --b3-menu-highlight-background: #a4d1a9ad;
     --b3-tab-custom-background: #c4ddc89c;
+    
 }
 
 .render-node[data-subtype='graphviz'] .graph > polygon {
@@ -463,6 +468,7 @@ mark {
     background-color: var(--b3-protyle-inline-mark-background);
     color: var(--b3-protyle-inline-mark-color);
 }
+
 /* ----------如果希望取消挖空效果，请删除这段代码 Start---------------- */
 /* 修改高亮为挖空效果，但是预览模式关闭（毕竟需要导出） */
 .protyle-wysiwyg mark{
@@ -1794,4 +1800,14 @@ display: flex;
 /* 块标提示不被窗口线遮挡 */
 .protyle-gutters {
     z-index: 3;
+}
+
+/* pdf搜索高亮 */
+.textLayer .highlight.selected {
+    background-color: #f8e254ec;
+}
+
+/* 悬浮工具栏样式 */
+.pdf__util.b3-menu.pdf__util--hide {
+    padding: 4px 4px;
 }
