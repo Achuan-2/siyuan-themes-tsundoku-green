@@ -96,23 +96,23 @@
     --b3-font-background4: var(--b3-card-success-background);
     --b3-font-background5: #dfddddaf;
     --b3-font-background6: #27e6ff42;
-    --b3-font-background7: #fff19598;
+    --b3-font-background7: #f8e8cb;
     --b3-font-background8: #f5250a69;
     --b3-font-background9: #d6ddfc;
     --b3-font-background10: #d3adf763;
     --b3-font-background11: #49efc54f;
     --b3-font-background12: #f5905663;
-    --b3-font-background13: var(--b3-theme-on-background);
+    --b3-font-background13:  var(--b3-theme-on-background);
     /* PDF */
     --b3-pdf-sidebar-width: 200px;
     --b3-pdf-offset: 0;
-    --b3-pdf-background1: var(--b3-font-color1);
-    --b3-pdf-background2: #fff195ec;
-    --b3-pdf-background3: #5be9ffb9;
-    --b3-pdf-background4: #9af997;
-    --b3-pdf-background5:  #d4d4d4;
-    --b3-pdf-background6: #52d4ca;
-    --b3-pdf-background7:  #faad14;
+    --b3-pdf-background1: #fff195ec;
+    --b3-pdf-background2: #9af997;
+    --b3-pdf-background3: #59c6ff;
+    --b3-pdf-background4: #ff8280;
+    --b3-pdf-background5:  #faad14;
+    --b3-pdf-background6:  #d4d4d4;
+    --b3-pdf-background7: #52d4ca;
     /* 动画效果 */
     --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
 
@@ -232,6 +232,12 @@ mark,
 }
 ::-webkit-scrollbar-thumb{
     background-color: #b5d3b8;
+}
+/* 最后一种背景色无纸张纹理 */
+strong[style="background-color: var(--b3-font-background13);"],
+div[style="background-color: var(--b3-font-background13);"]{
+    background-image: none;
+
 }
 
 /* ---------------编辑器内容两侧宽度设置 Start ————————————————————————*/
@@ -1804,7 +1810,7 @@ display: flex;
 
 /* pdf搜索高亮 */
 .textLayer .highlight.selected {
-    background-color: #f8e254ec;
+    background-color: #ffa938b9;
 }
 
 
@@ -1818,23 +1824,31 @@ display: flex;
 .b3-color__square{
     height: 23px;
     width: 23px;
-}
-.b3-color__square:hover{
-    transform: scale(1.1);
+    border-radius: 4px;
+
 }
 .b3-color__square[data-type="color"]{
     background: no-repeat round url("src/a1.svg") ;
-    box-shadow: 0 0 0 1px var(--b3-border-color) inset;
+    box-shadow: 0 0 0 1.5px var(--b3-border-color) inset;
 }
 
 .b3-color__square[data-type="backgroundColor"]{
-    background: no-repeat round url("src/a2.svg") #fff;
-    box-shadow: 0 0 0 1px var(--b3-border-color) inset;
+    background: no-repeat round url("src/a2.svg");
+    box-shadow: 0 0 0 1.5px var(--b3-border-color) inset;
 }
 
-.pdf__util.b3-menu.pdf__util--hide .b3-color__square{
+.b3-color__square:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 1.5px 1px var(--b3-theme-on-background) inset;
+}
+
+
+.pdf__util.b3-menu .b3-color__square{
     height: 20px;
     width: 20px;
     border-radius: 10px;    
     margin-right: 4px;
+}
+.pdf__util.b3-menu .fn__flex {
+    padding: 4px 4px 0px 4px!important;
 }
