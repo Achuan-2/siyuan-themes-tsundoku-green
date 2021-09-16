@@ -68,16 +68,16 @@
 
    /* 卡片背景 */
     --b3-card-error-color: rgb(97, 26, 21);
-    --b3-card-error-background: #f9dfdb;
+    --b3-card-error-background: #f1c5be;
     --b3-card-warning-color: rgb(102, 60, 0);
-    --b3-card-warning-background: #fbebd5;
+    --b3-card-warning-background: #f5dfc1;
     --b3-card-info-color: rgb(13, 60, 97);
-    --b3-card-info-background: #d7eaf9;
+    --b3-card-info-background:#a8dbf5c2;
     --b3-card-success-color: rgb(30, 70, 32);
-    --b3-card-success-background: #e0f9e0;
+    --b3-card-success-background: #c0e4c0;
 
     /* 自定义文字 */
-    --b3-font-color1: #f88686;
+    --b3-font-color1: #e36e6e;
     --b3-font-color2: #bf7203;
     --b3-font-color3: #2183ce;
     --b3-font-color4: #11ad81;
@@ -94,11 +94,11 @@
     --b3-font-background2: var(--b3-card-warning-background);
     --b3-font-background3: var(--b3-card-info-background);
     --b3-font-background4: var(--b3-card-success-background);
-    --b3-font-background5: #dfddddaf;
+    --b3-font-background5:  rgba(0,0,0,0.05);
     --b3-font-background6: #27e6ff42;
-    --b3-font-background7: #f8e8cb;
-    --b3-font-background8: #f5250a69;
-    --b3-font-background9: #d6ddfc;
+    --b3-font-background7: #ebda6dde;
+    --b3-font-background8: #fd00007a;
+    --b3-font-background9: #aab4e1bf;
     --b3-font-background10: #d3adf763;
     --b3-font-background11: #49efc54f;
     --b3-font-background12: #f5905663;
@@ -523,12 +523,13 @@ strong {
 }
 
 /* 块引用 */
-.protyle-wysiwyg [data-node-id] span[data-type='block-ref'],
-.protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref']{
+.protyle-wysiwyg [data-node-id] span[data-type='block-ref']{
     color: var(--b3-protyle-inline-blockref-color); /*更改颜色*/
     padding-bottom: 0em;
     box-sizing: border-box;
     height: 1.5em;
+    opacity: 1;
+    
     border-bottom: 1px dashed var(--b3-protyle-inline-blockref-color);
 }
 .protyle-wysiwyg [data-node-id] span[data-type='block-ref']:hover {
@@ -1807,7 +1808,20 @@ display: flex;
 .protyle-gutters {
     z-index: 3;
 }
+/* pdf双链 */
+.protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref'] {
+    color: #308b84;
+    padding-bottom: 0em;
+    box-sizing: border-box;
+    height: 1.5em;
+    opacity: 1;
+    border-bottom: 1px dashed #308b84;
 
+}
+.protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref']:hover {
+    color: var(--b3-protyle-inline-blockref-hover-color); /*更改鼠标悬浮的颜色*/
+    border-bottom: 1px dashed var(--b3-protyle-inline-blockref-hover-color); /*下划线可以去掉*/
+}
 /* pdf搜索高亮 */
 .textLayer .highlight.selected {
     background-color: #ffa938b9;
