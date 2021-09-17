@@ -22,7 +22,7 @@
 
 > 🎠 This may not be the most aesthetically pleasing theme for you, but perhaps it will be one of the most sought-after themes for the ultimate experience！
 > 
-> Others Themes:🌞 [Tsundoku Light](https://github.com/Achuan-2/siyuan-themes-tsundoku-light) | 🌙 [Tsundoku Dark ](https://github.com/Achuan-2/siyuan-themes-tsundoku) | 🧇[Tsundoku Texture](https://github.com/Achuan-2/siyuan-themes-tsundoku-texturen)  
+> Others Themes:🌞 [Tsundoku Light](https://github.com/Achuan-2/siyuan-themes-tsundoku-light) | 🌙 [Tsundoku Dark ](https://github.com/Achuan-2/siyuan-themes-tsundoku) | 🧇[Tsundoku Texture](https://github.com/Achuan-2/siyuan-themes-tsundoku-texture)  
 
 
 ## 💌 Origin
