@@ -45,7 +45,7 @@ I use this name to wake myself up and hope that SiYuan will help me make gradual
 * **文字颜色和背景色选框样式优化**  
 ![](assets/README_2021-09-17-10-25-23.png)
 * 纸张纹理背景  
-|![paper](https://user-images.githubusercontent.com/60436214/132967122-dfcc44ec-9e68-4657-83b6-3ff5831fa7ae.png)
+![paper](https://user-images.githubusercontent.com/60436214/132967122-dfcc44ec-9e68-4657-83b6-3ff5831fa7ae.png)
 
 
 ## 💥Impotant Changes
