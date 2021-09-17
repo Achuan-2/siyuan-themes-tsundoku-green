@@ -42,9 +42,10 @@ I use this name to wake myself up and hope that SiYuan will help me make gradual
 * **任务列表样式优化**：对任务列表效果做了很多的优化，当把任务列表勾选时，普通文字变色加删除线，并针对完成的任务列表中的各个行内和块样式都做了一定处理。完成的任务列表中的图片和代码块透明度降低![image](https://user-images.githubusercontent.com/60436214/132628239-dbf008ce-2e97-4d31-8d3e-2b72bede4e2a.png)
 * **win端和安卓端emoji样式统一**：修改**安卓端的默认 emoji** 为 Win 10 emoji——Segoe UI Emoji，保证emoji样式统一
 * **代码块样式调整**![image](https://user-images.githubusercontent.com/60436214/132967139-734b69e4-5a3f-476b-9bc4-112142c34e4d.png)
-* 纸张纹理背景![paper](https://user-images.githubusercontent.com/60436214/132967122-dfcc44ec-9e68-4657-83b6-3ff5831fa7ae.png)
 * **文字颜色和背景色选框样式优化**  
 ![](assets/README_2021-09-17-10-25-23.png)
+* 纸张纹理背景  
+|![paper](https://user-images.githubusercontent.com/60436214/132967122-dfcc44ec-9e68-4657-83b6-3ff5831fa7ae.png)
 
 
 ## 💥Impotant Changes
