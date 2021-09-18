@@ -68,13 +68,13 @@
 
    /* 卡片背景 */
     --b3-card-error-color: rgb(97, 26, 21);
-    --b3-card-error-background: #f1c5be;
+    --b3-card-error-background: #f1c5beda;
     --b3-card-warning-color: rgb(102, 60, 0);
-    --b3-card-warning-background: #f5dfc1;
+    --b3-card-warning-background: #f5dfc1e0;
     --b3-card-info-color: rgb(13, 60, 97);
-    --b3-card-info-background:#a8dbf5c2;
+    --b3-card-info-background:#a8dbf594;
     --b3-card-success-color: rgb(30, 70, 32);
-    --b3-card-success-background: #c0e4c0;
+    --b3-card-success-background: #c0e4c0da;
 
     /* 自定义文字 */
     --b3-font-color1: #e36e6e;
@@ -163,7 +163,7 @@
     --b3-protyle-inline-strong-color: #202124;
     --b3-protyle-inline-em-color: #202124;
     --b3-protyle-inline-s-color: #202124;
-    --b3-protyle-inline-link-color: #0f808fa4;
+    --b3-protyle-inline-link-color: #0e5797d5;
     --b3-protyle-inline-link-hover-color: #fa60a0;
     --b3-protyle-inline-mark-background: rgba(62, 163, 155, 0.267);
     --b3-protyle-inline-mark-color: #202124;
@@ -171,8 +171,8 @@
     --b3-protyle-inline-tag-color: #f8f9fa;
     --b3-protyle-inline-code-color: #038296;
     --b3-protyle-inline-code-background: #e0ecf3a6;
-    --b3-protyle-inline-blockref-color: #dc4949;
-    --b3-protyle-inline-blockref-hover-color: #ff398b;
+    --b3-protyle-inline-blockref-color: #0e7a88;
+    --b3-protyle-inline-blockref-hover-color: #030303;
     /* 表格 */
     --b3-table-border-color: #29523d3b;
     --b3-table-th-color: #91c39860;
@@ -1939,7 +1939,7 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 }
 /* pdf双链 */
 .protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref'] {
-    color: #308b84;
+    color: #086130;
     padding-bottom: 0em;
     box-sizing: border-box;
     height: 1.5em;
