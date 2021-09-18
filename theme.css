@@ -224,6 +224,7 @@ mark,
 .b3-list--background .b3-list-item--focus,
 .b3-list--files .b3-list-item--focus:not(.dragover),
 .b3-switch:after,
+.protyle-wysiwyg code:not(.hljs),
 ::-webkit-scrollbar-thumb {
     background-image: url('src/paper.png');
 }
@@ -647,7 +648,8 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
     display: inline-flex;
     transform: translateY(-1.5px);
     padding: 0em 0.4em;
-    background-color: #c1d4c288;
+    background-image: url('src/paper.png');
+    background-color: #a0cc952d;
     margin:0px 2px;
 }
 /* 超链接 */
