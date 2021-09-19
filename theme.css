@@ -572,6 +572,7 @@ div[data-type='block-render'] {
     border-left: 0px dashed #dfe0e1;
     margin:10px 0px;
     background-color: transparent;
+    padding: 0px 15px;
 }
 .protyle-wysiwyg__embed {
     border-top: 3px dashed #0e5d12d6;
@@ -656,7 +657,7 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
 .protyle-wysiwyg [data-node-id] span[data-type='a'] {
     color: var(--b3-protyle-inline-link-color);
     cursor: pointer;
-    border-bottom: 1px solid var(--b3-protyle-inline-link-color);;
+    border-bottom: 1px solid #0a3a641f;
     /* border-bottom: 1px solid transparent; */
     /* text-decoration: underline; */
 }
@@ -2002,3 +2003,4 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 .block__icons--active {
     background-color: var(--b3-theme-primary-lightest);
 }
+
