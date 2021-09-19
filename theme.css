@@ -646,7 +646,7 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
 }
 /* 行内代码 */
 .b3-typography code:not(.hljs), .protyle-wysiwyg code:not(.hljs) {
-    display: inline-flex;
+    /* display: inline-flex; */
     transform: translateY(-1.5px);
     padding: 0em 0.4em;
     background-image: url('src/paper.png');
