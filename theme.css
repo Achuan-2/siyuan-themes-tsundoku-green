@@ -179,7 +179,7 @@
     --b3-table-trn-color: #d5ead8;
     --b3-table-tr2n-color:#91c3982d;
     /* 高亮 */
-    --b3-menu-highlight-color: #068eb8;
+    --b3-menu-highlight-color: #0d9d8f;
     --b3-menu-highlight-focus-color: #34495e;
     /* 文件树背景高亮颜色 */
     --b3-menu-highlight-background: #a4d1a9ad;
@@ -1083,9 +1083,10 @@ div[data-subtype='t'][data-type='NodeList'] {
 .b3-button--text,
 .b3-button--cancel,
 .b3-button--outline {
-    color: #6b9ac9;
+    color: #3f9264;
     background-color: transparent;
 }
+
 .b3-button--text:hover,
 .b3-button--text:focus,
 .b3-button--cancel:hover,
@@ -1183,7 +1184,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 .b3-dialog__container .b3-card__info a:hover {
     outline: 0;
     text-decoration: underline;
-    color: #f48fb1;
+    color: var(--b3-menu-highlight-color);
 }
 .b3-dialog__container .b3-card__info a {
     color: #34495e;
