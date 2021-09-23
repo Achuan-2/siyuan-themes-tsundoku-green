@@ -106,13 +106,13 @@
     /* PDF */
     --b3-pdf-sidebar-width: 200px;
     --b3-pdf-offset: 0;
-    --b3-pdf-background1: #fff195ec;
-    --b3-pdf-background2: #9af997;
-    --b3-pdf-background3: #59c6ff;
-    --b3-pdf-background4: #ff8280;
-    --b3-pdf-background5:  #faad14;
-    --b3-pdf-background6:  #d4d4d4;
-    --b3-pdf-background7: #52d4ca;
+    --b3-pdf-background1: #e8e191;
+    --b3-pdf-background2: #8fd5bc;
+    --b3-pdf-background3: #8ed2e9;
+    --b3-pdf-background4: #e5b9b1;
+    --b3-pdf-background5:  #e3cc84;
+    --b3-pdf-background6:  #c2c5c5;
+    --b3-pdf-background7: #3eb9af;
     /* 动画效果 */
     --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
 
@@ -225,6 +225,8 @@ mark,
 .b3-list--files .b3-list-item--focus:not(.dragover),
 .b3-switch:after,
 .protyle-wysiwyg code:not(.hljs),
+.textLayer,
+.block__content,
 ::-webkit-scrollbar-thumb {
     background-image: url('src/paper.png');
 }
@@ -1959,7 +1961,7 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 }
 .protyle-wysiwyg [data-node-id] span[data-type='file-annotation-ref']:hover {
     color: var(--b3-protyle-inline-blockref-hover-color); /*更改鼠标悬浮的颜色*/
-    border-bottom: 1px dashed var(--b3-protyle-inline-blockref-hover-color); /*下划线可以去掉*/
+    border-bottom: 1px dashed var(--b3-protyle-inline-blockref-hover-color); 
 }
 /* pdf搜索高亮 */
 .textLayer .highlight.selected {
@@ -1995,19 +1997,27 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 
 .b3-color__square:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 1.5px 1px var(--b3-theme-on-background) inset;
+    box-shadow: 0 0 1.5px 0.5px rgb(48, 100, 109) inset;
 }
 
-
+.pdf__util.b3-menu {
+    /* 阴影减小 */
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+        0px 9px 46px 8px rgba(0, 0, 0, 0.12);;
+}
 .pdf__util.b3-menu .b3-color__square{
     height: 20px;
     width: 20px;
     border-radius: 10px;    
     margin-right: 4px;
 }
+/* pdf光标选中文本样式 */
+.pdf__outer ::selection{ 
+    /* 颜色不能加透明度，不然有叠加层  */
+    background-color:#afcdd3;
+}
 
 /* 区分侧栏聚焦和未聚焦状态 */
 .block__icons--active {
     background-color: var(--b3-theme-primary-lightest);
 }
-
