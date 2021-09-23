@@ -167,7 +167,7 @@
     --b3-protyle-inline-link-hover-color: #fa60a0;
     --b3-protyle-inline-mark-background: rgba(62, 163, 155, 0.267);
     --b3-protyle-inline-mark-color: #202124;
-    --b3-protyle-inline-tag-background: #81a9a9;
+    --b3-protyle-inline-tag-background: #378b8b;
     --b3-protyle-inline-tag-color: #f8f9fa;
     --b3-protyle-inline-code-color: #038296;
     --b3-protyle-inline-code-background: #e0ecf3a6;
@@ -627,8 +627,8 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
     text-decoration: none !important;
     color: var(--b3-protyle-inline-tag-color);
     background-color: var(--b3-protyle-inline-tag-background);
-    border-radius: 0.625em;
-    padding: 0.08em 0.375em 0.08em !important;
+    border-radius: 0.3em;
+    padding: 0em 0.375em 0.08em !important;
     margin: 0em 0.25em;
     transform: translateY(-1.5px);
     box-sizing: border-box;
@@ -636,12 +636,13 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
     transition: all 0.2s ease-in-out;
     z-index: 20;
 }
+/* 标签#号 */
 .protyle-wysiwyg [data-node-id] span[data-type='tag']::before {
     content: "#";
 }
-.protyle-wysiwyg [data-node-id] span[data-type='tag']::after {
+/* .protyle-wysiwyg [data-node-id] span[data-type='tag']::after {
     content: "#";
-}
+} */
 .protyle-wysiwyg [data-node-id] span[data-type='tag']:hover {
     transform: scale(1.05);
     background-color: var(--b3-protyle-inline-tag-background);
