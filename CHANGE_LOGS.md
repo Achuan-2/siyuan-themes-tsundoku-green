@@ -1,3 +1,7 @@
+## v0.2.3/2021-09-25
+* 🍱 add new link icons
+* ✨ net hyperlink default icon
+
 ## v0.2.2/2021-09-24
 
 * ✨ add link icon!
