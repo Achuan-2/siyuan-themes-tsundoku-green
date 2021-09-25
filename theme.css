@@ -655,6 +655,8 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
     background-image: url('src/paper.png');
     background-color: #a0cc952d;
     margin:0px 2px;
+    border: 1px solid #5e756325;
+
 }
 /* 超链接 */
 .protyle-wysiwyg [data-node-id] span[data-type='a'] {
