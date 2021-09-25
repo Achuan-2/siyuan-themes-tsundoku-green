@@ -2042,7 +2042,11 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 .b3-typography a[href^="file://"]::before{
     content: "";
     background-image: url('src/folder.svg');
-    opacity: 0.8;
+    opacity: 0.9;
+    background-size: 1.2em 1.2em;
+    filter: hue-rotate(0.9turn);
+
+
 
 }
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href^="es://"]:not(:empty)::before,
@@ -2401,6 +2405,8 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 
     content: "";
     background-image: url('src/mooc.png');
+    background-size: 0.9em;
+    width:0.9em;
 }
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="imooc.com"]:not(:empty)::before,
 .b3-typography a[href *="imooc.com"]::before{
@@ -2460,16 +2466,17 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
     background-image: url('src/nature.png');
 }
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="discord."]:not(:empty)::before,
-.b3-typography a[href *="nature.com"]::before{
+.b3-typography a[href *="discord."]::before{
     content: "";
-    background-image: url('src/discord.png');
+    background-image: url('src/discord.svg');
 }
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="hust.edu.cn"]:not(:empty)::before,
 .b3-typography a[href *="hust.edu.cn"]::before{
     content: "";
     background-image: url('src/hust.jpg');
-    background-size: 1.2em 1.2em;
-
+    background-size: 1.4em 1.3em;
+    width: 1.3em;
+    height: 1.1em;
 }
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="coursera.org"]:not(:empty)::before,
 .b3-typography a[href *="coursera.org"]::before{
