@@ -832,6 +832,11 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
     color: #65ca9b96 !important;
     border-bottom: 1px solid #65ca9b96 !important;
 }
+/* 完成的待办列表中link icon调整透明度 */
+.protyle-task--done [data-type='a']::before,
+.protyle-task--done a::before {
+    opacity: 0.5;
+}
 .protyle-task--done [data-type='a']:hover {
     /* 超链接悬浮调整 */
     color: rgb(184, 57, 135) !important;
@@ -1459,7 +1464,11 @@ div[data-subtype='t'][data-type='NodeList'] {
     content: "To the time to life";  
     color: #529684d7;
 }
-
+/* 空待办列表出现提示 */
+.protyle-wysiwyg [data-subtype="t"] .li .p>[spellcheck="false"]:empty:after {
+    content: "To-do";  
+    color: #9fa5a675;
+}
 /* 块添加圆角 */
 .protyle-wysiwyg [data-node-id] {
     border-radius: 3px;
@@ -1870,12 +1879,15 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
     opacity: 0;
 }
 
-.b3-list--files [data-type="new"] {
+.b3-list--files [data-type="new"]{
     /* background-color: #fff; */
     background-image: url(src/add.svg);
     background-size: 16px 16px;
     background-repeat: no-repeat;
     background-position: left 4px top 6px;
+}
+.b3-list--files [data-type="new"]:hover{
+    background-color: #b1cfba;
 }
 
 /* 调整内容中标题左侧文档图标大小 */
@@ -2610,6 +2622,12 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 .b3-typography a[href *="getquicker.net"]::before{
     content: "";
     background-image: url('src/Quicker.svg');
+
+}
+.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="visualstudio.com"]:not(:empty)::before,
+.b3-typography a[href *="visualstudio.com"]::before{
+    content: "";
+    background-image: url('src/vsvisual-studio-code.svg');
 
 }
 /* ----------------------------custom: 超链接icon---end------------------------------- */
