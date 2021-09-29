@@ -1464,14 +1464,17 @@ div[data-subtype='t'][data-type='NodeList'] {
     content: "To the time to life";  
     color: #529684d7;
 }
+
 /* 空列表出现提示 */
-.protyle-wysiwyg .list .li .p>[spellcheck="false"]:empty:after {
-    content: "List";  
-    color: #9fa5a675;
-}
-.protyle-wysiwyg [data-subtype="t"] .li .p>[spellcheck="false"]:empty:after {
+.protyle-wysiwyg [data-subtype="t"]>.li>.p:nth-of-type(2)>[spellcheck="false"]:empty:after {
     content: "To-do";  
-    color: #9fa5a675;
+    color: #52968452;
+}
+
+.protyle-wysiwyg [data-subtype="u"]>.li>.p:nth-of-type(2)>[spellcheck="false"]:empty:after,
+.protyle-wysiwyg [data-subtype="o"]>.li>.p:nth-of-type(2)>[spellcheck="false"]:empty:after {
+    content: "List";  
+    color: #52968452;
 }
 /* 块添加圆角 */
 .protyle-wysiwyg [data-node-id] {
