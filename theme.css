@@ -1477,7 +1477,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 .protyle-wysiwyg [data-node-id]:not(.code-block)>[spellcheck="false"]:focus:empty:after {
     /* 避免代码块也出现空行提示  */
     content: "To the time to life";  
-    color: #529684d7;
+    color: #52968452;
 }
 
 /* 空列表出现提示 */
