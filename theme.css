@@ -410,9 +410,9 @@ div[style="background-color: var(--b3-font-background13);"]{
 
 
 /* 表格默认居中 */
-.protyle  .table {
+/* .protyle  .table {
     text-align: center;
-}
+} */
 .protyle table {
     font-size: 0.9em;
     /* 导出时表格无法居中 */
