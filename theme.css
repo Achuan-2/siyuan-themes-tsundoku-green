@@ -496,10 +496,10 @@ strong {
 
 /* blockquote 引用 */
 .protyle-wysiwyg [data-node-id].bq, .b3-typography blockquote {
-    border: 2px solid #8aacac ;
+    border: 2.3px solid #8aacac ;
     border-radius: 0.31em;
     margin-top: 8px !important;
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+    /* box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%); */
     background-color: var(--b3-theme-background);
     background-image: url('src/paper.png');
 }
@@ -1542,10 +1542,12 @@ div[data-subtype='t'][data-type='NodeList'] {
 }
 /* dock栏和顶部图标放大动效 */
 .dock--vertical .dock__item:hover svg,
-.toolbar__item:hover svg,
-.block__icon:hover svg{
+.toolbar__item:hover svg{
     transform: scale(1.1);
     transition: all 0.1s ease-in-out;
+}
+.block__icon:hover svg{
+    transform: scale(0.9) !important;
 }
 .dock--vertical .dock__item svg,
 .toolbar__item svg,
