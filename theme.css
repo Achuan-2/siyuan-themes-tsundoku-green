@@ -682,8 +682,13 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
     color: var(--b3-protyle-inline-link-color);
     cursor: pointer;
     border-bottom: 1px solid #0a3a641f;
+    word-break:break-all;
     /* border-bottom: 1px solid transparent; */
     /* text-decoration: underline; */
+}
+.b3-typography a{
+    word-break:break-all;
+
 }
 /* 超链接前后是否要设置icon */
 /* .protyle-wysiwyg [data-node-id] span[data-type='a']:before
