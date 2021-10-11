@@ -2759,27 +2759,37 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 
 /* 区分大纲中的各级标题 */
 
-.file-tree ul.b3-list.b3-list--background>ul>[data-type="NodeHeading"] .b3-list-item__text{
+.file-tree ul.b3-list.b3-list--background [data-subtype="h1"] .b3-list-item__text,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h1"]{
     font-weight: 600;
-    opacity: 0.95;
+    opacity: 1;
     color:#04393f;
 }
-.file-tree ul.b3-list.b3-list--background>ul>ul>[data-type="NodeHeading"] .b3-list-item__text{
-    opacity: 0.9;
+.file-tree ul.b3-list.b3-list--background [data-subtype="h2"] .b3-list-item__text,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h2"]{
+    opacity: 1;
     font-weight: 600;
     color:#34495e;
 }
-.file-tree ul.b3-list.b3-list--background>ul>ul>ul>[data-type="NodeHeading"] .b3-list-item__text{
+.file-tree ul.b3-list.b3-list--background [data-subtype="h3"] .b3-list-item__text,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h3"]{
     opacity: 1;
+    color: #1a8b8b;
+    font-weight: 600;
 }
-.file-tree ul.b3-list.b3-list--background>ul>ul>ul>ul>[data-type="NodeHeading"] .b3-list-item__text{
-    opacity: 0.8;
+.file-tree ul.b3-list.b3-list--background [data-subtype="h4"] .b3-list-item__text,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h4"]{
+    opacity: 1;
+    color:#409488;
 }
-.file-tree ul.b3-list.b3-list--background >ul>ul>ul>ul>ul>[data-type="NodeHeading"] .b3-list-item__text{
-    opacity: 0.7;
+.file-tree ul.b3-list.b3-list--background [data-subtype="h5"] .b3-list-item__text,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h5"]{
+    opacity: 1;
+    color:#5bb5aa;
 }
-.file-tree ul.b3-list.b3-list--background >ul>ul>ul>ul>ul>ul>[data-type="NodeHeading"] .b3-list-item__text{
-    opacity: 0.6;
+.file-tree ul.b3-list.b3-list--background [data-subtype="h6"] .b3-list-item__text,
+.file-tree ul.b3-list.b3-list--background [data-subtype="h6"]{
+    opacity: 1;
 }
 .file-tree .b3-list--background .b3-list-item .b3-list-item__text:hover {
     color: var(--b3-menu-highlight-color) !important;
@@ -2973,7 +2983,6 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 }
 
 
-
 .protyle-wysiwyg [data-node-id][fold="1"].protyle-wysiwyg--hl::after,
 .protyle-wysiwyg [data-node-id][fold="1"]:hover::after,
 .protyle-wysiwyg .li [data-node-id][fold="1"].p:after{
@@ -3022,6 +3031,47 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
     top: 1.1em;
     left:-2.2em;
     
+}
+.protyle-wysiwyg [data-node-id][fold="1"].table::after {
+    top: 1.1em;
+    left:-2.2em;
+}
+.protyle-wysiwyg [data-node-id][fold="1"].sb>div>div {
+    display: none;
+}
+.protyle-wysiwyg [data-node-id][fold="1"].sb {
+    overflow: visible !important;
+    height: 2em !important;
+    margin-top: 0px !important;
+}
+
+.protyle-wysiwyg [data-node-id][fold="1"].sb div:not(:first-child){
+    display: none;
+}
+.protyle-wysiwyg [data-node-id][fold="1"].sb div:first-child {
+    color:var(--b3-theme-on-background) !important;
+    text-align: left !important;
+    /* height: 0rem; */
+    display: inline;
+
+}
+.protyle-wysiwyg [data-node-id][fold="1"].sb>div:first-child div{
+    display: none;
+}
+.protyle-wysiwyg [data-node-id][fold="1"].sb>div:first-child:before{
+    content: "Super Block";
+    /* line-height: 1.5rem;
+    height: 1.5rem; */
+    display: inline-block;
+    font-size: 1em;
+    text-align: left !important;
+    vertical-align: middle;
+    /* top:0.71rem; */
+    /* position:absolute; */
+}
+.protyle-wysiwyg [data-node-id][fold="1"].sb::after {
+    top: 1em;
+    left:-2.5em;
 }
 /* -----------------------------折叠优化 End---------------- */
 
