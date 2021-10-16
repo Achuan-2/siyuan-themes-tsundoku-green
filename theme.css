@@ -3238,4 +3238,11 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 
 .protyle-wysiwyg [data-node-id].li>[data-node-id]:before{
     background-color:var(--b3-border-color);
+    width:0.95px;
+
 }
+
+.protyle-wysiwyg [data-node-id].hr>div {
+    border-bottom: 2px solid #97b19a75;
+}
+
