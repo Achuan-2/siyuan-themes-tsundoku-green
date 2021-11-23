@@ -1165,16 +1165,20 @@ div[data-subtype='t'][data-type='NodeList'] {
 }
 
 /* 警告 */
+.b3-snackbar--error {
+    background-color: var(--b3-theme-error);
+    color:var(--b3-theme-on-error);
+}
 .b3-snackbar__content {
     line-height: 20px;
     border-radius: 4px;
     padding: 8px 16px;
     color: #fff;
     font-size: inherit;
-    background-color: #ec8d8deb;
+    background-color: #3fb6be;
     box-sizing: border-box;
-    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-        0 1px 18px 0 rgb(0 0 0 / 12%);
+    /* box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+        0 1px 18px 0 rgb(0 0 0 / 12%); */
     transition: transform 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
     transform: scale(0.8);
     top: 16px;
@@ -3328,4 +3332,11 @@ blockquote[style*="background-color: var(--b3-font-background13);"],
 .b3-typography u, .protyle-wysiwyg u {
     text-decoration: none;
     border-bottom: 2px solid var(--b3-theme-on-background);
+}
+
+/* 左上方菜单栏加宽 */
+.b3-menu, .b3-menu .b3-menu__submenu {
+    border-radius: 6px;
+    padding: 7px 6px 6px;
+    min-width: 200px;
 }
