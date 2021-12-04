@@ -183,7 +183,7 @@
     --b3-menu-highlight-color: #0d9d8f;
     --b3-menu-highlight-focus-color: #34495e;
     /* 文件树背景高亮颜色 */
-    --b3-menu-highlight-background: #a4d1a9ad;
+    --b3-menu-highlight-background: #a2c2a58c;
     --b3-tab-custom-background: #c4ddc89c;
     
 }
@@ -270,9 +270,8 @@ div[style="background-color: var(--b3-font-background13);"]{
 }
 
 /* 修复面板收缩的留白问题 */
-.block__icons,
-.block__icons>* {
-    background-color: #c4ddc8 !important;
+.block__icons{
+    background-color: #a7caad94 !important;
 }
 .block__icons span.fn__space,
 .block__icons div.fn__space{
@@ -503,14 +502,20 @@ strong {
 /* blockquote 引用 */
 .protyle-wysiwyg [data-node-id].bq, .b3-typography blockquote {
     /* border: 2.3px solid #8aacac ; */
-    border-left: 0.25em solid #8bb598;
+    border-left: 0.25em solid transparent;
     border-radius: 0.31em;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     /* box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%); */
-    background-color: #c7e0cc;
+    /* background-color: #c7e0cc; */
     background-image: url('src/paper.png');
 }
-
+.protyle-wysiwyg [data-node-id].bq:not([style]),
+.b3-typography blockquote:not([style]) {
+    opacity: 0.8;
+    background-image: url('src/blockquote.svg');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
 /* blockquote 缩进调整 */
 .protyle-wysiwyg [data-node-id].bq > div{
     padding-left: 1rem;
@@ -1304,9 +1309,11 @@ div[data-subtype='t'][data-type='NodeList'] {
     padding: 4px 4px 4px 14px;
     border: 0px;
     border-bottom: 0px solid transparent;
-    border-right: 2px solid #b7b8b97c;
-    border-left: 2px solid #b7b8b97c;
-    border-radius: 7px 7px 0px 0px;
+    /* border-right: 2px solid #b7b8b97c;
+    border-left: 2px solid #b7b8b97c; */
+    border: 1px solid #b7b8b97c;
+    /* border-radius: 7px 7px 0px 0px; */
+    border-radius: 7px 7px 7px 7px;
     margin-right: 2px;
     background-color: var(--b3-tab-custom-background);
     /* transition: all 0.1s ease; */
@@ -1317,11 +1324,14 @@ div[data-subtype='t'][data-type='NodeList'] {
     font-weight: 600;
 }
 /* 选中的标签页 */
-.layout-tab-bar .item--focus {
+.layout-tab-bar .item--focus,
+.layout__wnd--active .layout-tab-bar .item--focus {
+    border-radius: 7px 7px 0px 0px !important; 
     color: var(--b3-menu-highlight-focus-color);
     font-weight: 400;
     font-size: 15px;
     background-color: transparent;
+    border-top: 1px solid #b7b8b9;
     border-right: 1px solid #b7b8b9;
     border-left: 1px solid #b7b8b9;
     border-bottom: 0px solid transparent;
@@ -1332,20 +1342,12 @@ div[data-subtype='t'][data-type='NodeList'] {
 }
 /* 多窗口foucs的标签页 */
 .layout__wnd--active .layout-tab-bar .item--focus {
-    color: var(--b3-menu-highlight-focus-color);
-    border-color: #e9f1f5;
     font-weight: 600;
-    border-right: 1px solid #b7b8b9;
-    border-left: 1px solid #b7b8b9;
-    /* 更改多窗口标签页当前页面底框高亮颜色 */
-    border-bottom: 0px solid transparent;
-    /* border-bottom: 2px solid #34495e7c; */
-    background-color: var(--b3-theme-surface);
-    background-image: url('src/paper.png');
-
 }
+
 .layout-tab-bar .item:first-child {
-    border-radius: 0px 7px 0px 0px;
+    border-radius: 0px 7px 7px 0px;
+    /* border-radius: 0px 7px 0px 0px; */
     border-left: 0px solid #b7b8b97c;
 }
 /* 未保存样式 */
@@ -1357,10 +1359,16 @@ div[data-subtype='t'][data-type='NodeList'] {
     max-width: 300px;
 } */
 /* 文字超出范围的模糊效果 */
-/* .layout-tab-bar .item--focus .item__text::after {
-    background: linear-gradient(110deg, rgba(0, 0, 0, 0.001), var(--b3-theme-surface));
-    left: 294px;
-} */
+.layout-tab-bar .item__text::after {
+    content: ' ';
+    position: absolute;
+    left: 140px;
+    width: 16px;
+    height: 100%;
+    background: linear-gradient(
+90deg, #cbe1ce3b, #cbe1ce);
+    pointer-events: none;
+}
 
 /* 标签页按钮 */
 .layout-tab-bar .item__close {
@@ -2151,7 +2159,7 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 }
 /* 区分侧栏聚焦和未聚焦状态 */
 .block__icons--active {
-    background-color: var(--b3-theme-primary-lightest);
+    background-color: rgba(167, 201, 182, 0.705) !important;
 }
 
 
@@ -3415,4 +3423,9 @@ blockquote[style*="background-color: var(--b3-font-background13);"],
 .b3-list mark,
 .protyle-wysiwyg [data-node-id] span[data-type="search-mark"] {
     background-color: #efc77dad;
+}
+
+.emojis__item--current {
+    background: #439c598e;
+    border-radius: 4px;
 }
