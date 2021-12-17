@@ -261,7 +261,9 @@ div[style="background-color: var(--b3-font-background13);"]{
 
 /* ---------------编辑器内容两侧宽度设置 END ———————————————————————— */
 
-
+body{
+    font-size: 15.5px;
+}
 /* 主要背景色 */
 
 .dock {
