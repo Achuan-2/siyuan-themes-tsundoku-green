@@ -1317,7 +1317,7 @@ div[data-subtype='t'][data-type='NodeList'] {
     background-color: transparent;
 }
 .layout-tab-bar .item {
-    padding: 4px 4px 4px 14px;
+    padding: 4px 4px 3px 14px;
     border: 0px;
     border-bottom: 0px solid transparent;
     /* border-right: 2px solid #b7b8b97c;
@@ -1370,7 +1370,7 @@ div[data-subtype='t'][data-type='NodeList'] {
     max-width: 300px;
 } */
 /* 文字超出范围的模糊效果 */
-.layout-tab-bar .item__text::after {
+/* .layout-tab-bar .item__text::after {
     content: ' ';
     position: absolute;
     left: 140px;
@@ -1379,10 +1379,10 @@ div[data-subtype='t'][data-type='NodeList'] {
     background: linear-gradient(
 90deg, #cbe1ce3b, #cbe1ce);
     pointer-events: none;
-}
+} */
 
 /* 标签页按钮 */
-.layout-tab-bar .item__close {
+/* .layout-tab-bar .item__close {
     margin-left: 8px;
     height: 8px;
     width: 8px;
@@ -1391,6 +1391,9 @@ div[data-subtype='t'][data-type='NodeList'] {
     color: var(--b3-theme-on-surface);
     transition: var(--b3-transition);
     background-color: transparent;
+} */
+.layout-tab-bar .item:hover:not(.item--focus) {
+    background-color: #768d8338;
 }
 
 /* 面包屑 */
@@ -3476,4 +3479,10 @@ blockquote[style*="background-color: var(--b3-font-background13);"],
     top: 0px;
     width: 0px;
     height: 0px;
+}
+.protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="zh.javascript.info"]:not(:empty)::before,
+.b3-typography a[href *="zh.javascript.info"]::before{
+
+    content: "";
+    background-image: url('src/self/zhjavascript.png');
 }
