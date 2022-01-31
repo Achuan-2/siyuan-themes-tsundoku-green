@@ -1,4 +1,4 @@
-<h1 align="center">🥗Tsundoku(green): A Theme for SiYuan Note</h1>
+<h1 align="center">🍃Tsundoku(green): A Theme for SiYuan Note</h1>
 
 <p align="center">          
            <a title="Hits" target="_blank" href="https://github.com/Achuan-2/siyuan-themes-tsundoku-green"><img src="https://hits.b3log.org/Achuan-2/siyuan-themes-tsundoku-green.svg" ></a>
