@@ -469,6 +469,7 @@ body{
 .protyle-wysiwyg   table tr th,
 .b3-typography   table tr th  {
     border-collapse: separate;
+    border-top: 1px solid #afc5b3;
     border-left: 1px solid #afc5b3;
     border-right: 1px solid #afc5b3;
     background-image: url('src/paper.png');
@@ -565,9 +566,9 @@ strong {
 .b3-typography blockquote > blockquote {
     margin-left: 1em;
 }
-.protyle-wysiwyg [data-node-id].bq strong, .b3-typography blockquote strong {
+/* .protyle-wysiwyg [data-node-id].bq strong, .b3-typography blockquote strong {
     color: rgba(0, 0, 0, 0.67);
-}
+} */
 .protyle-wysiwyg [data-node-id].li .bq>.list {
     margin-left: 0px;
 }
@@ -2366,4 +2367,18 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 
 .layout__resize--lr:after{
     width: 3px;
+}
+
+.b3-typography em, .protyle-wysiwyg em,
+.protyle-wysiwyg strong,.b3-typography strong{
+    color: inherit;
+}
+.protyle-wysiwyg strong ,
+.b3-typography strong{
+    text-shadow: 0 0 0.5px #ffffff; 
+}
+
+.b3-typography s, .protyle-wysiwyg s{
+    color: inherit !important;
+    opacity: 0.5;
 }
