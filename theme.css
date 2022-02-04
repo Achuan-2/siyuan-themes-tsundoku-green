@@ -2370,7 +2370,11 @@ rotyle-wysiwyg [data-node-id][custom-f="20"]  div[contenteditable="true"]:after 
 .layout__resize--lr:after{
     width: 3px;
 }
-
+.layout__resize--lr {
+    background-color: #bbd5be;
+    width: 2px;
+    margin: 0px -2px 0px 0px;
+}
 .b3-typography em, .protyle-wysiwyg em,
 .protyle-wysiwyg strong,.b3-typography strong{
     color: inherit;
