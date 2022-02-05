@@ -1352,6 +1352,8 @@ div[data-subtype='t'][data-type='NodeList'] {
     /* margin-right: 2px; */
     background-color: var(--b3-tab-custom-background);
     /* transition: all 0.1s ease; */
+    box-shadow: 1px 4px 2px 0 var(--b3-theme-background);
+    
 }
 .layout-tab-bar .item:hover:not(.item--focus) {
     background-color: var(--b3-tab-custom-background);
