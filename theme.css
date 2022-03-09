@@ -1,3 +1,5 @@
+/* 导入自定义属性 */
+@import url("style/attr.css");
 /* 导入有序列表 */
 @import url("style/ol.css");
 /* 导入折叠css */
@@ -539,16 +541,13 @@ strong {
     background-repeat: no-repeat;
     background-color: #abcaac44;
 } */
-.protyle-wysiwyg [data-node-id].bq, .b3-typography blockquote {
-    /* border: 2.3px solid #8aacac ; */
-    border-left: 0.25em solid #8bb598;
-    border-radius: 0.31em;
-    /* margin-top: 8px; */
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
-    background-color: #c7e0cc;
-    background-image: url('src/paper.png');
-}
 
+.protyle-wysiwyg [data-node-id].bq, .b3-typography blockquote {
+    border: 1px solid #8e8e8e ;
+    background-color: #d8ebdb;
+    background-image: url('src/paper.png');
+
+}
 /* blockquote 缩进调整 */
 .protyle-wysiwyg [data-node-id].bq > div{
     padding-left: 1rem;
