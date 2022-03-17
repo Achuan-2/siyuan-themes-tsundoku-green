@@ -282,7 +282,7 @@ body{
     background-color: #b3d4b7a9;
 }
 .toolbar {
-    background-color: #b3d4b7a9;
+    background-color: #add4b1a9;
 }
 /* #c3ddc7af */
 .layout-tab-container {
@@ -1325,7 +1325,7 @@ div[data-subtype='t'][data-type='NodeList'] {
     transition: background-color 0.5s linear;
 }
 .layout-tab-bar {
-    background-color: var(--b3-theme-surface);
+    background-color: #add4b1a9;
 }
 .protyle-title__input,
 .layout__wnd--active .protyle-content,
@@ -1339,7 +1339,7 @@ div[data-subtype='t'][data-type='NodeList'] {
     border-bottom: 0px solid transparent;
     /* border-right: 2px solid #b7b8b97c;
     border-left: 2px solid #b7b8b97c; */
-    border: 1px solid #b7b8b97c;
+    border: 1px solid #b1c2b87c;
     /* border-right: 1px solid #b7b8b9; */
     /* border-radius: 7px 7px 0px 0px; */
     border-radius: 7px 7px 7px 7px;
