@@ -1327,6 +1327,9 @@ div[data-subtype='t'][data-type='NodeList'] {
 .layout-tab-bar {
     background-color: #add4b1a9;
 }
+.b3-dialog__container .layout-tab-bar {
+    background-color: #d8ebda;
+}
 .protyle-title__input,
 .layout__wnd--active .protyle-content,
 .layout__wnd--active .protyle-title .protyle-title__input{
