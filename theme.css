@@ -324,6 +324,10 @@ body{
     padding: 0.3em 4px;
     color: #04393f;
 }
+.protyle-wysiwyg .li>[data-node-id].h1,.b3-typography li h1{
+    /* 列表h1居左 */
+    text-align: left;
+}
 .protyle-wysiwyg [data-node-id].h2,.b3-typography h2 {
     border-bottom: 0px solid transparent !important;
     font-size: 1.55em !important;
