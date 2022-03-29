@@ -1306,11 +1306,10 @@ div[data-subtype='t'][data-type='NodeList'] {
 
 }
 
-.layout-tab-bar .item:first-child {
+/* .layout-tab-bar .item:first-child {
     border-radius: 0px 7px 7px 0px;
-    /* border-radius: 0px 7px 0px 0px; */
     border-left: 0px solid #b7b8b97c;
-}
+} */
 .layout-tab-bar .item__text{
     padding: 4px 0px 0px 8px;
 }
