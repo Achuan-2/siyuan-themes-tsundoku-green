@@ -543,7 +543,7 @@ strong {
     color: inherit;
 }
 
-/* blockquote 引用 */
+/* blockquote 引述块 */
 /* 之前1.0.7之前的引用块样式 */
 /* .protyle-wysiwyg [data-node-id].bq, .b3-typography blockquote {
     border-left: 0.25em solid transparent;
