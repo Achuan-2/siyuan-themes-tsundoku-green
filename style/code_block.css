@@ -20,9 +20,11 @@
     padding-left: 16px;
     font-family: var(--b3-font-family-code);
     background-size: 20px 20px;
-    background-image: none !important;
+    /* background-image: none !important; */
     background: var(--b3-protyle-code-background);
     border-radius: 0px 0px 4px 4px;
+    background-image: url('../src/paper.png') !important;
+    
 
 }
 
@@ -35,6 +37,7 @@
     box-shadow:  0 0 0 1px rgb(0 0 0 / 8%);
     /* margin-top: 15px !important; */
     padding-top: 32px !important;
+    background-image: url('../src/paper.png') !important;
 
 }
 
