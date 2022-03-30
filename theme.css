@@ -1960,6 +1960,22 @@ div[data-subtype='t'][data-type='NodeList'] {
     width: 2px;
     margin: 0px -2px 0px 0px;
 }
+.file-tree {
+    border-radius: 5px 5px 0px 0px;
+}
+.layout-tab-container {
+    background-color: #ccd4da;
+}
+.fn__flex-column.fn__flex-1{
+    background-color: #c7dfca;
+}
+.file-tree {
+    background-image: url(src/paper.png); 
+}
+.graph__loading{
+    background-color: rgb(196, 214, 212);
+}
+
 .b3-typography em, .protyle-wysiwyg em,
 .protyle-wysiwyg strong,.b3-typography strong{
     color: inherit;
