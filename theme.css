@@ -1,3 +1,5 @@
+/* 导入搜索窗口调大样式 */
+@import url("style/ctrlP.css");
 /* 导入文档属性 */
 @import url("style/doc-attr.css");
 /* 导入代码块样式 */
@@ -2036,3 +2038,17 @@ div[data-subtype='t'][data-type='NodeList'] {
 strong[style="color: var(--b3-font-color5);"]{
     font-weight: 400 !important;
 }
+.b3-label .fn__flex-1 {
+    overflow: hidden;
+}
+
+
+/* 
+div[data-key] .b3-dialog__container {
+    width: 95vw !important;
+}
+
+div[data-key] .b3-dialog__container .fn__flex-column {
+    height: 95vh !important;
+    width: 95vw !important;
+} */
