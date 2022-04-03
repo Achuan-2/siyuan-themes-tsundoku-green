@@ -11,7 +11,7 @@ div[data-subtype="u"].list {
 	color:transparent!important;
 }
 .li[data-subtype="u"]>.protyle-action:before{
-    color:var(--b3-theme-on-background) !important;
+    color:#66666d !important;
 }
 .li[data-subtype="u"][fold="1"]>.protyle-action:before{
     color: #1757b5bb !important;
