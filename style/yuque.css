@@ -89,7 +89,7 @@
 }
 .bq[style*="background-color: var(--b3-card-success-background);"] .code-block,
 .bq[style*="background-color: var(--b3-card-success-background);"] .protyle-linenumber__rows{
-    background-color: #d9f4d6;
+    background-color: #bee8b9;
 }
 
 /* 优化列表线 */
@@ -161,7 +161,7 @@
 /* 表格适配 */
 /* warning */
 .bq[style*="background-color: var(--b3-card-warning-background);"]   table thead tr{
-    background-color: #ccb494d2!important;
+    background-color: #e6c8a1d2!important;
 }
 .bq[style*="background-color: var(--b3-card-warning-background);"]   table tbody tr:nth-child(2n + 1){
     background-color: var(--b3-card-warning-background) !important;
@@ -176,7 +176,7 @@
 
 /* success */
 .bq[style*="background-color: var(--b3-card-success-background);"]   table thead tr{
-    background-color: #9fcc94d2 !important;
+    background-color: #a7cd9dd2 !important;
 }
 .bq[style*="background-color: var(--b3-card-success-background);"]   table tbody tr:nth-child(2n + 1){
     background-color: var(--b3-card-success-background) !important;
@@ -204,7 +204,7 @@
 }
 /* error */
 .bq[style*="background-color: var(--b3-card-error-background);"]   table thead tr{
-    background-color: #dab09dd2!important;
+    background-color: #e8bbac!important;
 }
 .bq[style*="background-color: var(--b3-card-error-background);"]   table tbody tr:nth-child(2n + 1){
     background-color: var(--b3-card-error-background) !important;
