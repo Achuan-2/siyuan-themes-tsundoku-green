@@ -333,7 +333,7 @@ body{
     text-align: left;
 }
 .protyle-wysiwyg [data-node-id].h2,.b3-typography h2 {
-    border-bottom: 1px solid #1a241d7a !important;
+    border-bottom: 1px solid #1a241d26 !important;
     /* border-bottom: 0px solid transparent !important; */
     font-size: 1.55em !important;
     color: #34495e;
@@ -1881,7 +1881,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 .protyle-wysiwyg [data-node-id].li>[data-node-id]:before{
     /* background-color:var(--b3-border-color); */
     width:0.95px;
-    border-left:1px solid #84ab8b;
+    border-left:1px solid #a9cbaf;
 
 }
 
