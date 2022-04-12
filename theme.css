@@ -1970,10 +1970,6 @@ div[data-subtype='t'][data-type='NodeList'] {
 .protyle-wysiwyg strong,.b3-typography strong{
     color: inherit;
 }
-.protyle-wysiwyg strong ,
-.b3-typography strong{
-    text-shadow: 0 0 0.5px #ffffff; 
-}
 
 .b3-typography s, .protyle-wysiwyg s{
     color: inherit !important;
