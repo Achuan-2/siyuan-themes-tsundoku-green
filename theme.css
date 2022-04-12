@@ -1694,7 +1694,7 @@ div[data-subtype='t'][data-type='NodeList'] {
 /* 悬浮工具栏样式 */
 .pdf__util.b3-menu.pdf__util--hide {
     padding: 2px 4px 5px;
-    border: 2px solid black;
+    border: 2px solid #454747;
 
 }
 .pdf__util.b3-menu .fn__flex {
@@ -1733,7 +1733,7 @@ div[data-subtype='t'][data-type='NodeList'] {
     height: 25px;
     width: 25px;
     border-radius: 10px;    
-    box-shadow: 0 0 0 2px black inset;
+    box-shadow: 0 0 0 2px #454747 inset;
 }
 /* pdf光标选中文本样式 */
 .pdf__outer ::selection{ 
