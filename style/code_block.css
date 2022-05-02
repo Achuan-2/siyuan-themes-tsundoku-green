@@ -63,12 +63,13 @@
 
 /*  代码块行数*/
 .protyle-linenumber__rows {
-    margin-top: 32px !important;
+    margin-top:32px !important;
     background-color: var(--b3-protyle-code-background);
     font-family: var(--b3-font-family-code);
     opacity: 0.5;
     width: 45px;
     left:0px;
+    padding:4px;
 
 }
 /* 代码语言显示 */
