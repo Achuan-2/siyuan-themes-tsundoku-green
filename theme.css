@@ -8,7 +8,7 @@
 /* 导入搜索窗口调大样式 */
 @import url("style/ctrlP.css");
 /* 导入文档属性 */
-@import url("style/doc-attr.css");
+@import url("style/doc_attr.css");
 /* 导入代码块样式 */
 @import url("style/code_block.css");
 /* 导入自定义属性 */
