@@ -21,9 +21,9 @@
     font-family: var(--b3-font-family-code);
     background-size: 20px 20px;
     /* background-image: none !important; */
-    background: var(--b3-protyle-code-background);
+    background-color: var(--b3-protyle-code-background) !important;
     border-radius: 0px 0px 4px 4px;
-    background-image: url('../src/paper.png') !important;
+    /* background-image: url('../src/paper.png') !important; */
     
 
 }
@@ -109,6 +109,9 @@
 
 }
 /* 代码语言显示 */
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
+    opacity: 1;
+}
 .code-block .protyle-icons {
 
     background-color: transparent;

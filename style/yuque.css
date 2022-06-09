@@ -60,7 +60,7 @@
 
 /* 优化代码块和行内代码 */
 
-.bq[style*="background-color: var("] .hljs{
+.protyle-wysiwyg .bq[style*="background-color: var("] .hljs{
     background-color: #f6faf8a8 !important;
 }
 .bq[style*="background-color: var(--b3-card-error-background);"] kbd,
