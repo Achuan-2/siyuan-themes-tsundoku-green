@@ -770,8 +770,8 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
 /* 行内代码 */
 .b3-typography code:not(.hljs):not(:empty) , .protyle-wysiwyg code:not(.hljs):not(:empty){
     position: relative;
-    display: inline-block;
-    margin: 0px 2px 0px;
+    /* display: inline-block;
+    margin: 0px 2px 0px; */
     top: -0.1em;
     background-image: url('src/paper.png');
     background-color: #a0cc952d;
