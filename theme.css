@@ -1862,24 +1862,31 @@ div[data-subtype='t'][data-type='NodeList'] {
     border-bottom: 2px solid var(--b3-theme-on-background);
 }
 
-/* 菜单栏加宽 */
-.b3-menu,.b3-menu .b3-menu__submenu {
-    border-radius: 6px;
-    padding: 6px 6px 6px;
-    min-width: 200px;
+/* 左上方菜单栏加宽 */
+@media screen and (min-width: 768px) {
+
+    .b3-menu,
+    .b3-menu .b3-menu__submenu {
+        border-radius: 6px;
+        padding: 6px 6px 6px;
+        min-width: 200px;
+    }
+
+    .b3-menu .b3-menu__submenu {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 5px 6px 5px;
+    }
 }
-.b3-menu .b3-menu__submenu {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px 6px 5px;
-}
+
+
 
 /* 搜索高亮 */
 .b3-list mark,
 .protyle-wysiwyg [data-node-id] span[data-type="search-mark"] {
     background-color: #efc77dad;
 }
-
+/* emoji选中背景 */
 .emojis__item--current {
     background: #439c598e;
     border-radius: 4px;
