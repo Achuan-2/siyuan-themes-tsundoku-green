@@ -22,6 +22,7 @@
     background-size: 20px 20px;
     /* background-image: none !important; */
     background-color: var(--b3-protyle-code-background) !important;
+    border-radius: 0 0px 4px 0;
     /* background-image: url('../src/paper.png') !important; */
 }
 
@@ -96,14 +97,19 @@
 
 /*  代码块行数*/
 .protyle-linenumber__rows {
-    margin-top:32px !important;
+    margin-top: 32px !important;
     background-color: var(--b3-protyle-code-background);
     font-family: var(--b3-font-family-code);
-    opacity: 0.5;
-    width: 54px;
-    left:0px;
-    padding:4px;
+    /* opacity: 0.5; */
+    /* width: 57px;
+    left: -2px; */
+    padding: 4px;
+    border-radius: 0px 0 0 4px;
+}
 
+.protyle-linenumber__rows span {
+    color: #b1b1b1;
+    opacity: 0.5;
 }
 /* 代码语言显示 */
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
