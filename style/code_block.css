@@ -1,92 +1,80 @@
-/* -----------------设置代码块最大长度，添加纵向滚动条------------------------------ */
-/* .protyle-wysiwyg:not([id="preview"])  .code-block {
-    overflow-y: auto;
-    max-height: 80vh;
-}
-.protyle-wysiwyg:not([id="preview"])  .code-block::-webkit-scrollbar-thumb{
-    border-left:solid 0px transparent
-}
-
-.protyle-wysiwyg:not([id="preview"])  .li .code-block:not(:nth-child(2)) {
-    overflow-y: inherit;
-    max-height: inherit;
-} */
-/* -------------------------------代码块样式-------------------------------------- */
-
 .protyle-reset .hljs,
-.protyle-wysiwyg .hljs ,.b3-typography .hljs{
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    padding-left: 16px;
+.protyle-wysiwyg .hljs,
+.b3-typography .hljs {
+    padding: 8px 16px 4px 16px !important;
     font-family: var(--b3-font-family-code);
     background-size: 20px 20px;
-    /* background-image: none !important; */
+    background-image: none !important;
     background-color: var(--b3-protyle-code-background) !important;
     border-radius: 0 0px 4px 0;
     /* background-image: url('../src/paper.png') !important; */
+
 }
 
 .code-block {
     position: relative;
     display: block;
     border-radius: 4px;
-    background: #b4dfc2dc ;
-    /* border: 1.5px solid rgb(0 0 0 / 8%); */
-    box-shadow:  0 0 0 1px rgb(0 0 0 / 8%);
-    /* margin-top: 15px !important; */
-    padding-top: 32px !important;
-    background-image: url('../src/paper.png') !important;
-
+    background: var(--b3-protyle-code-background);
+    box-shadow: 0 0 0 1px #1e25351a;
+    padding-top: 25px !important;
+    /* background-image: url('../src/paper.png') !important; */
 }
 
-
-/* .code-block .protyle-action {
-    position: relative;
-    .hljs::before
-} */
-.code-block::after {
-    content: ' ';
-    position: absolute;
-    background: #fa625c;
-    box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
-    border-radius: 50%;
-    top: 10px;
-    left: 15px;
-    height: 12px;
-    width: 12px;
-    z-index: 1;
+.protyle-wysiwyg[id="preview"] .code-block {
+    box-shadow: 0 0 0 1.5px #1e25351a;
 }
 
 
 .b3-typography .code-block .protyle-action .protyle-icon,
-.protyle-wysiwyg .code-block .protyle-action .protyle-icon{
+.protyle-wysiwyg .code-block .protyle-action .protyle-icon {
     background-color: var(--b3-tooltips-color);
 }
+
 .protyle-wysiwyg [data-node-id][fold="1"]:not(.li):not([data-type="NodeHeading"]).code-block {
     line-height: 1.625;
     height: 2px;
 }
-/* 功能标签栏 */
-.b3-typography .code-block .protyle-action,
-.protyle-wysiwyg [data-node-id].code-block .protyle-action {
-    left: auto;
-    right: 4px;
-    /* float: right; */
-    /* position: relative; */
-}
 
-/* 间隔 */
-.b3-typography .code-block .protyle-action>span.fn__flex-1,
-.protyle-wysiwyg [data-node-id].code-block .protyle-action>span.fn__flex-1 {
-    flex: 0;
-}
+
 
 /* 语言标签 */
-.b3-typography .code-block .protyle-action .protyle-action__language,
+/* 代码语言显示 */
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-    margin-left: 0.5em !important;
-    margin-right: 0.5em;
-    margin-top: -1px;
+    opacity: 1;
+}
+
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
+    display: flex;
+    font-size: 13px !important;
+    text-transform: uppercase;
+    height: 20px;
+    padding: 0 5px;
+    margin: 3px 0 0 8px;
+    color: #7e888d;
+}
+
+.protyle-wysiwyg .code-block[linenumber="true"] .protyle-action .protyle-action__language {
+    margin: 3px 0 0 68px !important;
+}
+
+.protyle-wysiwyg[contenteditable=true] .code-block .protyle-action .protyle-action__language:hover {
+    background-color: #a1abb161;
+}
+
+.code-block .protyle-action .protyle-action__language::after {
+    content: "";
+    width: 8px;
+    height: 19px;
+    margin-left: 5px;
+    background-color: var(--b3-theme-on-background);
+    -webkit-mask: url("../src/expand_more_black_18dp.svg") no-repeat center;
+    mask: url("../src/expand_more_black_18dp.svg") no-repeat center;
+    opacity: 0;
+}
+
+.code-block .protyle-action .protyle-action__language:hover::after {
+    opacity: 1;
 }
 
 .b3-typography .code-block .protyle-icons,
@@ -97,13 +85,11 @@
 
 /*  代码块行数*/
 .protyle-linenumber__rows {
-    margin-top: 32px !important;
+    margin-top: 24px !important;
     background-color: var(--b3-protyle-code-background);
     font-family: var(--b3-font-family-code);
-    /* opacity: 0.5; */
-    /* width: 57px;
-    left: -2px; */
-    padding: 4px;
+    opacity: 0.7;
+    padding: 9px 4px 4px 4px;
     border-radius: 0px 0 0 4px;
 }
 
@@ -111,44 +97,34 @@
     color: #b1b1b1;
     opacity: 0.5;
 }
-/* 代码语言显示 */
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-    opacity: 1;
-}
-.code-block .protyle-icons {
 
-    background-color: transparent;
-    border-radius: 4px;
-}
-.code-block .protyle-icons>span:hover {
-    background-color: #cad8dd;
-}
 
-.code-block .protyle-icons .protyle-action__language,.code-block .protyle-icons>span{
-    color: rgba(13, 56, 50, 0.719);
-    font-weight: 600;
-}
 
-.code-block .protyle-icons {
-    opacity: 1;
-}
-.code-block .protyle-icons .protyle-action__copy {
-    opacity: 0;
-}
-.code-block:hover .protyle-icons .protyle-action__copy {
-    opacity: 1;
-}
-.code-block:hover .protyle-icons {
-    opacity: 1 !important;
+/* 按钮颜色 */
+.b3-typography .code-block .protyle-action .protyle-icon,
+.protyle-wysiwyg .code-block .protyle-action .protyle-icon {
+    background-color: #a1abb1;
 }
 
 
-/* 代码块编辑时不闪 */
+/* ------代码语言栏居右--------- */
+/* .b3-typography .code-block .protyle-action,
+.protyle-wysiwyg [data-node-id].code-block .protyle-action {
+    left: auto;
+    right: 4px;
+} */
 
 
-.code-block:focus-within .protyle-icons .protyle-action__copy{
-    opacity: 0;
-}
-.code-block .protyle-icons .protyle-action__copy:hover{
-    opacity: 1;
-}
+/* ---------mac三点--------- */
+/* .code-block::after {
+    content: ' ';
+    position: absolute;
+    background: #fa625c;
+    box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
+    border-radius: 50%;
+    top: 10px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    z-index: 1;
+} */
