@@ -2,6 +2,6 @@
     display: block;
     margin: 0 auto;
 }
-.protyle-wysiwyg[custom-linkicon="no"] [data-node-id] span[data-type='a']:not(:empty)::before{
+.protyle-wysiwyg[custom-linkicon="no"] [data-node-id] span[data-type~='a']:not(:empty)::before{
     display: none !important;
 }
