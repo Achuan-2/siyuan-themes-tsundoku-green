@@ -32,14 +32,10 @@ function createHBuiderXToolbar() {
 	siYuanToolbar = getSiYuanToolbar();
 
 	HBuiderXToolbar = getHBuiderXToolbar();
-	var windowControls = document.getElementById("windowControls");
+	var windowControls = document.getElementById("barSetting");
 
 	if (HBuiderXToolbar) siYuanToolbar.removeChild(HBuiderXToolbar);
-	HBuiderXToolbar = insertCreateBefore(
-		windowControls,
-		"div",
-		HBuiderXToolbarID
-	);
+	HBuiderXToolbar = insertCreateAfter(windowControls, "div", HBuiderXToolbarID);
 }
 
 /**------------------边栏鼠标悬浮展开按钮-----------------*/
