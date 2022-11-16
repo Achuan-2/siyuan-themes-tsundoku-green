@@ -1,10 +1,10 @@
 
 /* 导入h3样式 */
 @import url("style/h3.css");
-/* 导入看板样式 */
-@import url("style/kanban.css");
-/* 导入脑图样式 */
-@import url("style/mindmap.css");
+/* 导入列表转换样式 */
+@import url("style/list2board.css");
+@import url("style/list2map.css");
+@import url("style/list2table.css");
 /* 导入搜索窗口调大样式 */
 @import url("style/ctrlP.css");
 /* 导入文档属性 */
@@ -827,6 +827,16 @@ div[data-type='NodeBlockQueryEmbed'] .ft__secondary {
     /* 大圆背景 */
     background-color: #66a9a37d !important;
     opacity: .68;
+}
+.protyle-wysiwyg [data-subtype="t"].li[fold="1"]>.protyle-action:after{
+    /* 大圆背景 */
+    background-color: #66a9a37d !important;
+    border-radius: 0.2em;
+    opacity: .68;
+    width: 1.2em;
+    height: 1.2em;
+    top: 0.95em;
+    left: 0.98em;
 }
 .protyle-wysiwyg [data-subtype="u"].li[fold="1"]>.protyle-action {
     /* 小圆点 */
@@ -2072,7 +2082,7 @@ body>div#action {
     mask-image: none;
     -webkit-mask-image: none;
 }
-
+/* 
 .protyle-wysiwyg [data-node-id].li:before {
     content: "";
     position: absolute;
@@ -2080,4 +2090,4 @@ body>div#action {
     border-left: .5px solid var(--b3-theme-background-light);
     top: 35px;
     left: 17px;
-}
+} */
