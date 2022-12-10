@@ -260,7 +260,7 @@ function openRightPanel() {
 
 function createHighlightBecomesHidden() {
 	loadStyle(
-		"/appearance/themes/Tsundoku Green/style/mark-hide.css",
+		"/appearance/themes/Tsundoku Green/style/mark-display.css",
 		"markCss"
 	);
 
@@ -269,10 +269,7 @@ function createHighlightBecomesHidden() {
 		"div",
 		HighlightBecomesHiddenID
 	);
-	highlightBecomesHiddenButton.setAttribute(
-		"title",
-		"开启后显示CTRL+E隐藏文本。"
-	);
+	highlightBecomesHiddenButton.setAttribute('title', '开启后隐藏CTRL+E文本');
 
 	AddEvent(
 		highlightBecomesHiddenButton,
@@ -285,27 +282,17 @@ function createHighlightBecomesHidden() {
 function highlightBecomesHiddenButtonClickEven() {
 	var obj = document.getElementById("markCss");
 
-	if (
-		obj.getAttribute("href") !=
-		"/appearance/themes/Tsundoku Green/style/mark-hide.css"
-	) {
-		obj.setAttribute(
-			"href",
-			"/appearance/themes/Tsundoku Green/style/mark-hide.css"
-		);
-		highlightBecomesHiddenButton.style.backgroundColor = "transparent";
-		highlightBecomesHiddenButton.style.backgroundImage =
-			"url(/appearance/themes/Tsundoku Green/src/highlight.svg)";
-	} else {
-		obj.setAttribute(
-			"href",
-			"/appearance/themes/Tsundoku Green/style/mark-display.css"
-		);
-		highlightBecomesHiddenButton.style.backgroundColor =
-			"var(--b3-theme-background-light)";
-		highlightBecomesHiddenButton.style.backgroundImage =
-			"url(/appearance/themes/Tsundoku Green/src/highlight.svg)";
-	}
+	if (obj.getAttribute('href') != '/appearance/themes/Tsundoku Green/style/mark-display.css') {
+        obj.setAttribute('href', '/appearance/themes/Tsundoku Green/style/mark-display.css');
+        highlightBecomesHiddenButton.style.backgroundColor = 'transparent';
+        highlightBecomesHiddenButton.style.backgroundImage =
+            'url(/appearance/themes/Tsundoku Green/src/highlight.svg)';
+    } else {
+        obj.setAttribute('href', '/appearance/themes/Tsundoku Green/style/mark-hide.css');
+        highlightBecomesHiddenButton.style.backgroundColor = 'var(--b3-theme-background-light)';
+        highlightBecomesHiddenButton.style.backgroundImage =
+            'url(/appearance/themes/Tsundoku Green/src/highlight.svg)';
+    }
 }
 
 /**------------------为打开文档的标题下显示文档创建日期------------- */
