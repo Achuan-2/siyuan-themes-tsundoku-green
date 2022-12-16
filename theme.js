@@ -997,7 +997,7 @@ window.theme.changeThemeMode = function (
 	window.theme.updateStyle(window.theme.ID_CUSTOM_STYLE, href_custom);
 };
 
-/* 加载 HTML 块中使用的小工具 */
+/* 加载主题功能 */
 window.theme.loadScript(
 	"/appearance/themes/Tsundoku Green/script/module/html.js",
 	"text/javascript"
@@ -1008,4 +1008,14 @@ window.theme.loadScript(
 );
 window.theme.loadScript(
 	"/appearance/themes/Tsundoku Green/script/module/doc.js"
+);
+window.theme.loadScript(
+    window.theme.addURLParam('/appearance/themes/Tsundoku Green/script/module/goto.js'),
+    undefined,
+    true
+);
+window.theme.loadScript(
+    window.theme.addURLParam('/appearance/themes/Tsundoku Green/script/module/menu.js'),
+    undefined,
+    true
 );
