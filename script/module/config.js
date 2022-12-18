@@ -1361,7 +1361,7 @@ export var config = {
                                 },
                             },
                             {
-                                enable: fase,
+                                enable: false,
                                 type: null,
                                 mode: 'button',
                                 icon: '#iconFocus',
